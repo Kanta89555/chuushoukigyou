@@ -35,6 +35,16 @@ export async function findVocabularies(username: string): Promise<VocabularyItem
   return rows.map(mapVocabulary);
 }
 
+export async function deleteVocabulary(id: string, username: string): Promise<boolean> {
+  const sql = getDb();
+  const rows = await sql`
+    DELETE FROM vocabularies
+    WHERE id = ${id} AND username = ${username}
+    RETURNING id
+  `;
+  return rows.length === 1;
+}
+
 function mapVocabulary(row: Record<string, unknown>): VocabularyItem {
   const explanation = termExplanationSchema.parse(JSON.parse(String(row.explanation)));
   return {

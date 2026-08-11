@@ -383,7 +383,12 @@ aside h2 {
 
 .vocabulary-list { margin: 0; padding: 0; list-style: none; }
 .vocabulary-list li { border-bottom: 1px solid var(--line); }
-.vocabulary-list button { width: 100%; padding: 14px 2px; display: grid; gap: 5px; text-align: left; background: transparent; border: 0; cursor: pointer; }
+.vocabulary-item { position: relative; overflow: hidden; }
+.vocabulary-item-content { position: relative; z-index: 1; background: var(--surface); transition: transform 160ms ease; touch-action: pan-y; }
+.vocabulary-item-row { display: flex; align-items: stretch; }
+.vocabulary-item-toggle { flex: 1; min-width: 0; padding: 14px 2px; display: grid; gap: 5px; text-align: left; background: transparent; border: 0; cursor: pointer; }
+.vocabulary-delete-button { flex: 0 0 auto; margin: 10px 0 10px 8px; padding: 6px 8px; color: #a32626; background: transparent; border: 1px solid currentColor; border-radius: 5px; cursor: pointer; }
+.vocabulary-swipe-delete { position: absolute; z-index: 0; inset: 0 0 0 auto; width: 84px; color: #fff; background: #b52d2d; border: 0; cursor: pointer; }
 .vocabulary-list strong { font-size: 0.84rem; }
 .vocabulary-list span { overflow: hidden; color: var(--muted); font-size: 0.72rem; text-overflow: ellipsis; white-space: nowrap; }
 
@@ -484,6 +489,7 @@ aside h2 {
 
 @media (max-width: 1040px) {
   .vocabulary-close { display: grid; }
+  .vocabulary-delete-button { display: none; }
 }
 
 @media (max-width: 440px) {
