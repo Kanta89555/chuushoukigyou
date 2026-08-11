@@ -1,0 +1,2908 @@
+{
+  "id": "smec",
+  "title": "中小企業診断士",
+  "slug": "smec",
+  "type": "qualification",
+  "children": [
+    {
+      "id": "business-management",
+      "title": "企業経営理論",
+      "slug": "business-management",
+      "type": "subject",
+      "children": [
+        {
+          "id": "management-strategy",
+          "title": "経営戦略論",
+          "slug": "strategy",
+          "type": "category",
+          "children": [
+            {
+              "id": "philosophy-domain",
+              "title": "経営理念とドメイン",
+              "slug": "philosophy-domain",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/philosophy-domain.md"
+            },
+            {
+              "id": "swot-analysis",
+              "title": "SWOT分析と経営環境分析",
+              "slug": "swot-analysis",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/swot-analysis.md"
+            },
+            {
+              "id": "corporate-strategy",
+              "title": "全社戦略（成長戦略・多角化・M&A）",
+              "slug": "corporate-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/corporate-strategy.md"
+            },
+            {
+              "id": "business-strategy",
+              "title": "事業戦略（競争戦略・差別化・コストリーダーシップ）",
+              "slug": "business-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/business-strategy.md"
+            },
+            {
+              "id": "vrio",
+              "title": "VRIO分析と競争優位性",
+              "slug": "vrio",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/vrio.md"
+            },
+            {
+              "id": "ppm",
+              "title": "PPM（プロダクト・ポートフォリオ・マネジメント）",
+              "slug": "ppm",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/ppm.md"
+            },
+            {
+              "id": "ansoff-matrix",
+              "title": "アンゾフの成長ベクトル",
+              "slug": "ansoff-matrix",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/ansoff-matrix.md"
+            },
+            {
+              "id": "mot",
+              "title": "技術経営（MOT）",
+              "slug": "mot",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/mot.md"
+            },
+            {
+              "id": "csr-governance",
+              "title": "CSRとコーポレートガバナンス",
+              "slug": "csr-governance",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/csr-governance.md"
+            },
+            {
+              "id": "global-strategy",
+              "title": "国際経営・グローバル戦略",
+              "slug": "global-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/global-strategy.md"
+            },
+            {
+              "id": "management-philosophy",
+              "title": "経営理念・ビジョン・ミッション",
+              "slug": "management-philosophy",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/management-philosophy.md"
+            },
+            {
+              "id": "business-domain",
+              "title": "事業ドメイン",
+              "slug": "business-domain",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/business-domain.md"
+            },
+            {
+              "id": "external-environment",
+              "title": "外部環境分析（PEST・5フォース）",
+              "slug": "external-environment",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/external-environment.md"
+            },
+            {
+              "id": "internal-environment",
+              "title": "内部環境分析（経営資源・ケイパビリティ）",
+              "slug": "internal-environment",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/internal-environment.md"
+            },
+            {
+              "id": "competitive-advantage",
+              "title": "競争優位の基本概念",
+              "slug": "competitive-advantage",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/competitive-advantage.md"
+            },
+            {
+              "id": "porter-generic-strategies",
+              "title": "ポーターの基本戦略",
+              "slug": "porter-generic-strategies",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/porter-generic-strategies.md"
+            },
+            {
+              "id": "value-chain",
+              "title": "バリューチェーン分析",
+              "slug": "value-chain",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/value-chain.md"
+            },
+            {
+              "id": "core-competence",
+              "title": "コア・コンピタンス",
+              "slug": "core-competence",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/core-competence.md"
+            },
+            {
+              "id": "growth-strategy",
+              "title": "成長戦略とアンゾフの成長ベクトル",
+              "slug": "growth-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/growth-strategy.md"
+            },
+            {
+              "id": "diversification",
+              "title": "多角化戦略とシナジー",
+              "slug": "diversification",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/diversification.md"
+            },
+            {
+              "id": "m-and-a",
+              "title": "M&A・アライアンス・企業提携",
+              "slug": "m-and-a",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/m-and-a.md"
+            },
+            {
+              "id": "innovation",
+              "title": "イノベーションの理論",
+              "slug": "innovation",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/innovation.md"
+            },
+            {
+              "id": "technology-management",
+              "title": "技術経営（MOT）",
+              "slug": "technology-management",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/technology-management.md"
+            },
+            {
+              "id": "open-innovation",
+              "title": "オープンイノベーションと外部連携",
+              "slug": "open-innovation",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/open-innovation.md"
+            },
+            {
+              "id": "entrepreneurship",
+              "title": "アントレプレナーシップと新事業開発",
+              "slug": "entrepreneurship",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/entrepreneurship.md"
+            },
+            {
+              "id": "csr-sustainability",
+              "title": "CSR・サステナビリティ・ESG",
+              "slug": "csr-sustainability",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/csr-sustainability.md"
+            },
+            {
+              "id": "corporate-governance",
+              "title": "コーポレートガバナンス",
+              "slug": "corporate-governance",
+              "type": "unit",
+              "article": "content/articles/business-management/strategy/corporate-governance.md"
+            }
+          ]
+        },
+        {
+          "id": "organization-theory",
+          "title": "組織論",
+          "slug": "organization",
+          "type": "category",
+          "children": [
+            {
+              "id": "org-structure",
+              "title": "組織構造論（機能別・事業部制・マトリックス組織）",
+              "slug": "org-structure",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/org-structure.md"
+            },
+            {
+              "id": "org-culture",
+              "title": "組織文化と組織開発",
+              "slug": "org-culture",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/org-culture.md"
+            },
+            {
+              "id": "motivation-theory",
+              "title": "モチベーション理論",
+              "slug": "motivation-theory",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/motivation-theory.md"
+            },
+            {
+              "id": "leadership-theory",
+              "title": "リーダーシップ論",
+              "slug": "leadership-theory",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/leadership-theory.md"
+            },
+            {
+              "id": "hrm",
+              "title": "人的資源管理（採用・配置・評価・報酬）",
+              "slug": "hrm",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/hrm.md"
+            },
+            {
+              "id": "labor-law",
+              "title": "労働関連法規",
+              "slug": "labor-law",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/labor-law.md"
+            },
+            {
+              "id": "org-lifecycle",
+              "title": "組織のライフサイクルと変革",
+              "slug": "org-lifecycle",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/org-lifecycle.md"
+            },
+            {
+              "id": "organization-design",
+              "title": "組織設計の基本原則",
+              "slug": "organization-design",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-design.md"
+            },
+            {
+              "id": "functional-organization",
+              "title": "機能別組織",
+              "slug": "functional-organization",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/functional-organization.md"
+            },
+            {
+              "id": "divisional-organization",
+              "title": "事業部制組織",
+              "slug": "divisional-organization",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/divisional-organization.md"
+            },
+            {
+              "id": "matrix-project-organization",
+              "title": "マトリックス組織・プロジェクト組織",
+              "slug": "matrix-project-organization",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/matrix-project-organization.md"
+            },
+            {
+              "id": "network-organization",
+              "title": "ネットワーク組織・バーチャル組織",
+              "slug": "network-organization",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/network-organization.md"
+            },
+            {
+              "id": "bureaucracy",
+              "title": "官僚制組織と組織構造論",
+              "slug": "bureaucracy",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/bureaucracy.md"
+            },
+            {
+              "id": "organization-contingency",
+              "title": "コンティンジェンシー理論",
+              "slug": "organization-contingency",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-contingency.md"
+            },
+            {
+              "id": "organization-culture",
+              "title": "組織文化",
+              "slug": "organization-culture",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-culture.md"
+            },
+            {
+              "id": "organization-learning",
+              "title": "組織学習と学習する組織",
+              "slug": "organization-learning",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-learning.md"
+            },
+            {
+              "id": "knowledge-management",
+              "title": "ナレッジ・マネジメント",
+              "slug": "knowledge-management",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/knowledge-management.md"
+            },
+            {
+              "id": "organization-change",
+              "title": "組織変革と組織開発",
+              "slug": "organization-change",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-change.md"
+            },
+            {
+              "id": "organization-lifecycle",
+              "title": "組織のライフサイクル",
+              "slug": "organization-lifecycle",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/organization-lifecycle.md"
+            },
+            {
+              "id": "motivation-content",
+              "title": "モチベーションの内容理論",
+              "slug": "motivation-content",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/motivation-content.md"
+            },
+            {
+              "id": "motivation-process",
+              "title": "モチベーションの過程理論",
+              "slug": "motivation-process",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/motivation-process.md"
+            },
+            {
+              "id": "leadership",
+              "title": "リーダーシップ理論",
+              "slug": "leadership",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/leadership.md"
+            },
+            {
+              "id": "group-dynamics",
+              "title": "集団・チーム・グループダイナミクス",
+              "slug": "group-dynamics",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/group-dynamics.md"
+            },
+            {
+              "id": "conflict",
+              "title": "コンフリクトと組織内政治",
+              "slug": "conflict",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/conflict.md"
+            },
+            {
+              "id": "communication",
+              "title": "組織コミュニケーション",
+              "slug": "communication",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/communication.md"
+            },
+            {
+              "id": "decision-making",
+              "title": "意思決定論",
+              "slug": "decision-making",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/decision-making.md"
+            },
+            {
+              "id": "human-resource-management",
+              "title": "人的資源管理の全体像",
+              "slug": "human-resource-management",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/human-resource-management.md"
+            },
+            {
+              "id": "recruitment-placement",
+              "title": "採用・配置・異動",
+              "slug": "recruitment-placement",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/recruitment-placement.md"
+            },
+            {
+              "id": "performance-appraisal",
+              "title": "人事評価",
+              "slug": "performance-appraisal",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/performance-appraisal.md"
+            },
+            {
+              "id": "compensation",
+              "title": "賃金・報酬制度",
+              "slug": "compensation",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/compensation.md"
+            },
+            {
+              "id": "human-resource-development",
+              "title": "能力開発・キャリア開発",
+              "slug": "human-resource-development",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/human-resource-development.md"
+            },
+            {
+              "id": "diversity-workstyle",
+              "title": "ダイバーシティ・働き方・人的資本経営",
+              "slug": "diversity-workstyle",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/diversity-workstyle.md"
+            },
+            {
+              "id": "labor-relations",
+              "title": "労働組合と労使関係",
+              "slug": "labor-relations",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/labor-relations.md"
+            },
+            {
+              "id": "labor-contract-law",
+              "title": "労働契約・就業規則",
+              "slug": "labor-contract-law",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/labor-contract-law.md"
+            },
+            {
+              "id": "working-hours-leave",
+              "title": "労働時間・休憩・休日・休暇",
+              "slug": "working-hours-leave",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/working-hours-leave.md"
+            },
+            {
+              "id": "employment-law",
+              "title": "雇用・解雇・非正規雇用",
+              "slug": "employment-law",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/employment-law.md"
+            },
+            {
+              "id": "social-insurance-basics",
+              "title": "社会保険制度の基礎",
+              "slug": "social-insurance-basics",
+              "type": "unit",
+              "article": "content/articles/business-management/organization/social-insurance-basics.md"
+            }
+          ]
+        },
+        {
+          "id": "marketing",
+          "title": "マーケティング論",
+          "slug": "marketing",
+          "type": "category",
+          "children": [
+            {
+              "id": "stp",
+              "title": "マーケティングの基本概念とSTP",
+              "slug": "stp",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/stp.md"
+            },
+            {
+              "id": "product-strategy",
+              "title": "製品戦略（プロダクト）",
+              "slug": "product-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/product-strategy.md"
+            },
+            {
+              "id": "pricing-strategy",
+              "title": "価格戦略（プライス）",
+              "slug": "pricing-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/pricing-strategy.md"
+            },
+            {
+              "id": "channel-strategy",
+              "title": "チャネル戦略（プレイス）",
+              "slug": "channel-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/channel-strategy.md"
+            },
+            {
+              "id": "promotion-strategy",
+              "title": "プロモーション戦略",
+              "slug": "promotion-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/promotion-strategy.md"
+            },
+            {
+              "id": "consumer-behavior",
+              "title": "消費者行動分析",
+              "slug": "consumer-behavior",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/consumer-behavior.md"
+            },
+            {
+              "id": "branding",
+              "title": "ブランド戦略",
+              "slug": "branding",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/branding.md"
+            },
+            {
+              "id": "service-marketing",
+              "title": "サービスマーケティング",
+              "slug": "service-marketing",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/service-marketing.md"
+            },
+            {
+              "id": "marketing-concept",
+              "title": "マーケティングの基本概念",
+              "slug": "marketing-concept",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/marketing-concept.md"
+            },
+            {
+              "id": "marketing-environment",
+              "title": "マーケティング環境分析",
+              "slug": "marketing-environment",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/marketing-environment.md"
+            },
+            {
+              "id": "marketing-research",
+              "title": "マーケティング・リサーチ",
+              "slug": "marketing-research",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/marketing-research.md"
+            },
+            {
+              "id": "segmentation",
+              "title": "市場細分化（セグメンテーション）",
+              "slug": "segmentation",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/segmentation.md"
+            },
+            {
+              "id": "targeting",
+              "title": "ターゲティング",
+              "slug": "targeting",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/targeting.md"
+            },
+            {
+              "id": "positioning",
+              "title": "ポジショニング",
+              "slug": "positioning",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/positioning.md"
+            },
+            {
+              "id": "marketing-mix",
+              "title": "マーケティング・ミックス（4P）",
+              "slug": "marketing-mix",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/marketing-mix.md"
+            },
+            {
+              "id": "product-lifecycle",
+              "title": "プロダクト・ライフサイクル",
+              "slug": "product-lifecycle",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/product-lifecycle.md"
+            },
+            {
+              "id": "new-product-development",
+              "title": "新製品開発",
+              "slug": "new-product-development",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/new-product-development.md"
+            },
+            {
+              "id": "brand-strategy",
+              "title": "ブランド戦略",
+              "slug": "brand-strategy",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/brand-strategy.md"
+            },
+            {
+              "id": "retail-wholesale",
+              "title": "小売・卸売と流通構造",
+              "slug": "retail-wholesale",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/retail-wholesale.md"
+            },
+            {
+              "id": "advertising-sales-promotion",
+              "title": "広告・販売促進・PR",
+              "slug": "advertising-sales-promotion",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/advertising-sales-promotion.md"
+            },
+            {
+              "id": "personal-selling",
+              "title": "人的販売・営業管理",
+              "slug": "personal-selling",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/personal-selling.md"
+            },
+            {
+              "id": "organizational-buying",
+              "title": "組織購買行動・BtoBマーケティング",
+              "slug": "organizational-buying",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/organizational-buying.md"
+            },
+            {
+              "id": "relationship-marketing",
+              "title": "関係性マーケティング・CRM",
+              "slug": "relationship-marketing",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/relationship-marketing.md"
+            },
+            {
+              "id": "digital-marketing",
+              "title": "デジタルマーケティング",
+              "slug": "digital-marketing",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/digital-marketing.md"
+            },
+            {
+              "id": "customer-experience",
+              "title": "顧客価値・顧客満足・カスタマーエクスペリエンス",
+              "slug": "customer-experience",
+              "type": "unit",
+              "article": "content/articles/business-management/marketing/customer-experience.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting",
+      "title": "財務・会計",
+      "slug": "finance",
+      "type": "subject",
+      "children": [
+        {
+          "id": "accounting",
+          "title": "アカウンティング",
+          "slug": "accounting",
+          "type": "category",
+          "children": [
+            {
+              "id": "bookkeeping-basics",
+              "title": "簿記の基礎",
+              "slug": "bookkeeping-basics",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/bookkeeping-basics.md"
+            },
+            {
+              "id": "financial-statements",
+              "title": "財務諸表（貸借対照表・損益計算書）",
+              "slug": "financial-statements",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/financial-statements.md"
+            },
+            {
+              "id": "cash-flow-statement",
+              "title": "キャッシュフロー計算書",
+              "slug": "cash-flow-statement",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/cash-flow-statement.md"
+            },
+            {
+              "id": "cost-accounting",
+              "title": "原価計算",
+              "slug": "cost-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/cost-accounting.md"
+            },
+            {
+              "id": "financial-analysis",
+              "title": "経営分析（財務諸表分析）",
+              "slug": "financial-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/financial-analysis.md"
+            },
+            {
+              "id": "tax-accounting",
+              "title": "税務会計の基礎",
+              "slug": "tax-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/tax-accounting.md"
+            },
+            {
+              "id": "accounting-cycle",
+              "title": "仕訳・転記・決算整理",
+              "slug": "accounting-cycle",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/accounting-cycle.md"
+            },
+            {
+              "id": "balance-sheet",
+              "title": "貸借対照表",
+              "slug": "balance-sheet",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/balance-sheet.md"
+            },
+            {
+              "id": "income-statement",
+              "title": "損益計算書",
+              "slug": "income-statement",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/income-statement.md"
+            },
+            {
+              "id": "equity-statement",
+              "title": "株主資本等変動計算書",
+              "slug": "equity-statement",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/equity-statement.md"
+            },
+            {
+              "id": "revenue-expense-recognition",
+              "title": "収益・費用の認識",
+              "slug": "revenue-expense-recognition",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/revenue-expense-recognition.md"
+            },
+            {
+              "id": "inventory-accounting",
+              "title": "棚卸資産会計",
+              "slug": "inventory-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/inventory-accounting.md"
+            },
+            {
+              "id": "fixed-assets",
+              "title": "固定資産・減価償却",
+              "slug": "fixed-assets",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/fixed-assets.md"
+            },
+            {
+              "id": "securities-accounting",
+              "title": "有価証券・金融商品会計",
+              "slug": "securities-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/securities-accounting.md"
+            },
+            {
+              "id": "provisions-liabilities",
+              "title": "引当金・負債会計",
+              "slug": "provisions-liabilities",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/provisions-liabilities.md"
+            },
+            {
+              "id": "tax-effect-accounting",
+              "title": "税効果会計",
+              "slug": "tax-effect-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/tax-effect-accounting.md"
+            },
+            {
+              "id": "consolidated-accounting",
+              "title": "連結会計の基礎",
+              "slug": "consolidated-accounting",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/consolidated-accounting.md"
+            },
+            {
+              "id": "job-order-costing",
+              "title": "個別原価計算",
+              "slug": "job-order-costing",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/job-order-costing.md"
+            },
+            {
+              "id": "process-costing",
+              "title": "総合原価計算",
+              "slug": "process-costing",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/process-costing.md"
+            },
+            {
+              "id": "standard-costing",
+              "title": "標準原価計算",
+              "slug": "standard-costing",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/standard-costing.md"
+            },
+            {
+              "id": "direct-costing",
+              "title": "直接原価計算",
+              "slug": "direct-costing",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/direct-costing.md"
+            },
+            {
+              "id": "cvp-analysis",
+              "title": "CVP分析・損益分岐点分析",
+              "slug": "cvp-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/cvp-analysis.md"
+            },
+            {
+              "id": "budget-control",
+              "title": "予算管理",
+              "slug": "budget-control",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/budget-control.md"
+            },
+            {
+              "id": "profitability-analysis",
+              "title": "収益性分析",
+              "slug": "profitability-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/profitability-analysis.md"
+            },
+            {
+              "id": "safety-analysis",
+              "title": "安全性分析",
+              "slug": "safety-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/safety-analysis.md"
+            },
+            {
+              "id": "efficiency-analysis",
+              "title": "効率性・生産性分析",
+              "slug": "efficiency-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/efficiency-analysis.md"
+            },
+            {
+              "id": "growth-analysis",
+              "title": "成長性分析",
+              "slug": "growth-analysis",
+              "type": "unit",
+              "article": "content/articles/finance/accounting/growth-analysis.md"
+            }
+          ]
+        },
+        {
+          "id": "corporate-finance",
+          "title": "ファイナンス",
+          "slug": "corporate-finance",
+          "type": "category",
+          "children": [
+            {
+              "id": "fundraising",
+              "title": "資金調達（デット・エクイティ）",
+              "slug": "fundraising",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/fundraising.md"
+            },
+            {
+              "id": "investment-decision",
+              "title": "投資意思決定（NPV・IRR・回収期間法）",
+              "slug": "investment-decision",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/investment-decision.md"
+            },
+            {
+              "id": "corporate-valuation",
+              "title": "企業価値評価",
+              "slug": "corporate-valuation",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/corporate-valuation.md"
+            },
+            {
+              "id": "risk-return",
+              "title": "リスクとリターン・ポートフォリオ理論",
+              "slug": "risk-return",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/risk-return.md"
+            },
+            {
+              "id": "wacc",
+              "title": "資本コスト（WACC）",
+              "slug": "wacc",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/wacc.md"
+            },
+            {
+              "id": "derivatives",
+              "title": "デリバティブとオプション",
+              "slug": "derivatives",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/derivatives.md"
+            },
+            {
+              "id": "time-value-money",
+              "title": "貨幣の時間価値",
+              "slug": "time-value-money",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/time-value-money.md"
+            },
+            {
+              "id": "funding",
+              "title": "資金調達と資本構成",
+              "slug": "funding",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/funding.md"
+            },
+            {
+              "id": "debt-finance",
+              "title": "デット・ファイナンス",
+              "slug": "debt-finance",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/debt-finance.md"
+            },
+            {
+              "id": "equity-finance",
+              "title": "エクイティ・ファイナンス",
+              "slug": "equity-finance",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/equity-finance.md"
+            },
+            {
+              "id": "capital-cost",
+              "title": "資本コスト",
+              "slug": "capital-cost",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/capital-cost.md"
+            },
+            {
+              "id": "npv",
+              "title": "NPV法",
+              "slug": "npv",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/npv.md"
+            },
+            {
+              "id": "irr",
+              "title": "IRR法・回収期間法",
+              "slug": "irr",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/irr.md"
+            },
+            {
+              "id": "free-cash-flow",
+              "title": "フリー・キャッシュ・フロー",
+              "slug": "free-cash-flow",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/free-cash-flow.md"
+            },
+            {
+              "id": "stock-valuation",
+              "title": "株式価値評価",
+              "slug": "stock-valuation",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/stock-valuation.md"
+            },
+            {
+              "id": "bond-valuation",
+              "title": "債券価値評価",
+              "slug": "bond-valuation",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/bond-valuation.md"
+            },
+            {
+              "id": "portfolio-theory",
+              "title": "ポートフォリオ理論",
+              "slug": "portfolio-theory",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/portfolio-theory.md"
+            },
+            {
+              "id": "capm",
+              "title": "CAPM",
+              "slug": "capm",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/capm.md"
+            },
+            {
+              "id": "dividend-policy",
+              "title": "配当政策",
+              "slug": "dividend-policy",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/dividend-policy.md"
+            },
+            {
+              "id": "leverage",
+              "title": "財務レバレッジ・営業レバレッジ",
+              "slug": "leverage",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/leverage.md"
+            },
+            {
+              "id": "working-capital",
+              "title": "運転資本管理",
+              "slug": "working-capital",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/working-capital.md"
+            },
+            {
+              "id": "foreign-exchange-finance",
+              "title": "為替リスクと国際財務",
+              "slug": "foreign-exchange-finance",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/foreign-exchange-finance.md"
+            },
+            {
+              "id": "options",
+              "title": "オプション取引",
+              "slug": "options",
+              "type": "unit",
+              "article": "content/articles/finance/corporate-finance/options.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economics",
+      "title": "経済学・経済政策",
+      "slug": "economics",
+      "type": "subject",
+      "children": [
+        {
+          "id": "macroeconomics",
+          "title": "マクロ経済学",
+          "slug": "macro",
+          "type": "category",
+          "children": [
+            {
+              "id": "national-accounts",
+              "title": "国民経済計算（GDP等）",
+              "slug": "national-accounts",
+              "type": "unit",
+              "article": "content/articles/economics/macro/national-accounts.md"
+            },
+            {
+              "id": "fiscal-monetary-policy",
+              "title": "財政政策と金融政策",
+              "slug": "fiscal-monetary-policy",
+              "type": "unit",
+              "article": "content/articles/economics/macro/fiscal-monetary-policy.md"
+            },
+            {
+              "id": "balance-of-payments",
+              "title": "国際収支と為替相場",
+              "slug": "balance-of-payments",
+              "type": "unit",
+              "article": "content/articles/economics/macro/balance-of-payments.md"
+            },
+            {
+              "id": "is-lm",
+              "title": "IS-LM分析",
+              "slug": "is-lm",
+              "type": "unit",
+              "article": "content/articles/economics/macro/is-lm.md"
+            },
+            {
+              "id": "inflation-unemployment",
+              "title": "物価と失業（インフレ・フィリップス曲線）",
+              "slug": "inflation-unemployment",
+              "type": "unit",
+              "article": "content/articles/economics/macro/inflation-unemployment.md"
+            },
+            {
+              "id": "growth-theory",
+              "title": "経済成長理論",
+              "slug": "growth-theory",
+              "type": "unit",
+              "article": "content/articles/economics/macro/growth-theory.md"
+            },
+            {
+              "id": "nominal-real-gdp",
+              "title": "名目GDP・実質GDP・GDPデフレーター",
+              "slug": "nominal-real-gdp",
+              "type": "unit",
+              "article": "content/articles/economics/macro/nominal-real-gdp.md"
+            },
+            {
+              "id": "consumption-saving",
+              "title": "消費・貯蓄",
+              "slug": "consumption-saving",
+              "type": "unit",
+              "article": "content/articles/economics/macro/consumption-saving.md"
+            },
+            {
+              "id": "investment",
+              "title": "投資関数",
+              "slug": "investment",
+              "type": "unit",
+              "article": "content/articles/economics/macro/investment.md"
+            },
+            {
+              "id": "goods-market",
+              "title": "財市場と45度線分析",
+              "slug": "goods-market",
+              "type": "unit",
+              "article": "content/articles/economics/macro/goods-market.md"
+            },
+            {
+              "id": "multiplier",
+              "title": "乗数理論",
+              "slug": "multiplier",
+              "type": "unit",
+              "article": "content/articles/economics/macro/multiplier.md"
+            },
+            {
+              "id": "money-market",
+              "title": "貨幣市場",
+              "slug": "money-market",
+              "type": "unit",
+              "article": "content/articles/economics/macro/money-market.md"
+            },
+            {
+              "id": "money-supply",
+              "title": "貨幣供給と信用創造",
+              "slug": "money-supply",
+              "type": "unit",
+              "article": "content/articles/economics/macro/money-supply.md"
+            },
+            {
+              "id": "fiscal-policy",
+              "title": "財政政策",
+              "slug": "fiscal-policy",
+              "type": "unit",
+              "article": "content/articles/economics/macro/fiscal-policy.md"
+            },
+            {
+              "id": "monetary-policy",
+              "title": "金融政策",
+              "slug": "monetary-policy",
+              "type": "unit",
+              "article": "content/articles/economics/macro/monetary-policy.md"
+            },
+            {
+              "id": "ad-as",
+              "title": "AD-AS分析",
+              "slug": "ad-as",
+              "type": "unit",
+              "article": "content/articles/economics/macro/ad-as.md"
+            },
+            {
+              "id": "inflation",
+              "title": "インフレーション・デフレーション",
+              "slug": "inflation",
+              "type": "unit",
+              "article": "content/articles/economics/macro/inflation.md"
+            },
+            {
+              "id": "unemployment",
+              "title": "失業と労働市場",
+              "slug": "unemployment",
+              "type": "unit",
+              "article": "content/articles/economics/macro/unemployment.md"
+            },
+            {
+              "id": "phillips-curve",
+              "title": "フィリップス曲線",
+              "slug": "phillips-curve",
+              "type": "unit",
+              "article": "content/articles/economics/macro/phillips-curve.md"
+            },
+            {
+              "id": "economic-growth",
+              "title": "経済成長理論",
+              "slug": "economic-growth",
+              "type": "unit",
+              "article": "content/articles/economics/macro/economic-growth.md"
+            },
+            {
+              "id": "business-cycle",
+              "title": "景気循環",
+              "slug": "business-cycle",
+              "type": "unit",
+              "article": "content/articles/economics/macro/business-cycle.md"
+            },
+            {
+              "id": "exchange-rate",
+              "title": "為替レートの決定",
+              "slug": "exchange-rate",
+              "type": "unit",
+              "article": "content/articles/economics/macro/exchange-rate.md"
+            },
+            {
+              "id": "open-economy",
+              "title": "開放経済と国際マクロ経済",
+              "slug": "open-economy",
+              "type": "unit",
+              "article": "content/articles/economics/macro/open-economy.md"
+            },
+            {
+              "id": "economic-policy",
+              "title": "経済政策の目標と手段",
+              "slug": "economic-policy",
+              "type": "unit",
+              "article": "content/articles/economics/macro/economic-policy.md"
+            }
+          ]
+        },
+        {
+          "id": "microeconomics",
+          "title": "ミクロ経済学",
+          "slug": "micro",
+          "type": "category",
+          "children": [
+            {
+              "id": "market-mechanism",
+              "title": "市場メカニズム（需要と供給）",
+              "slug": "market-mechanism",
+              "type": "unit",
+              "article": "content/articles/economics/micro/market-mechanism.md"
+            },
+            {
+              "id": "consumer-behavior-eco",
+              "title": "消費者行動と需要曲線",
+              "slug": "consumer-behavior-eco",
+              "type": "unit",
+              "article": "content/articles/economics/micro/consumer-behavior-eco.md"
+            },
+            {
+              "id": "producer-behavior",
+              "title": "企業行動と供給曲線・費用理論",
+              "slug": "producer-behavior",
+              "type": "unit",
+              "article": "content/articles/economics/micro/producer-behavior.md"
+            },
+            {
+              "id": "market-organization",
+              "title": "市場と組織の経済学（独占・寡占）",
+              "slug": "market-organization",
+              "type": "unit",
+              "article": "content/articles/economics/micro/market-organization.md"
+            },
+            {
+              "id": "game-theory",
+              "title": "ゲーム理論",
+              "slug": "game-theory",
+              "type": "unit",
+              "article": "content/articles/economics/micro/game-theory.md"
+            },
+            {
+              "id": "industrial-policy",
+              "title": "産業組織と競争促進政策",
+              "slug": "industrial-policy",
+              "type": "unit",
+              "article": "content/articles/economics/micro/industrial-policy.md"
+            },
+            {
+              "id": "demand-supply",
+              "title": "需要と供給",
+              "slug": "demand-supply",
+              "type": "unit",
+              "article": "content/articles/economics/micro/demand-supply.md"
+            },
+            {
+              "id": "market-equilibrium",
+              "title": "市場均衡と価格メカニズム",
+              "slug": "market-equilibrium",
+              "type": "unit",
+              "article": "content/articles/economics/micro/market-equilibrium.md"
+            },
+            {
+              "id": "elasticity",
+              "title": "需要・供給の価格弾力性",
+              "slug": "elasticity",
+              "type": "unit",
+              "article": "content/articles/economics/micro/elasticity.md"
+            },
+            {
+              "id": "consumer-theory",
+              "title": "消費者理論の基礎",
+              "slug": "consumer-theory",
+              "type": "unit",
+              "article": "content/articles/economics/micro/consumer-theory.md"
+            },
+            {
+              "id": "utility",
+              "title": "効用・無差別曲線",
+              "slug": "utility",
+              "type": "unit",
+              "article": "content/articles/economics/micro/utility.md"
+            },
+            {
+              "id": "budget-constraint",
+              "title": "予算制約と消費者均衡",
+              "slug": "budget-constraint",
+              "type": "unit",
+              "article": "content/articles/economics/micro/budget-constraint.md"
+            },
+            {
+              "id": "income-substitution-effect",
+              "title": "所得効果・代替効果",
+              "slug": "income-substitution-effect",
+              "type": "unit",
+              "article": "content/articles/economics/micro/income-substitution-effect.md"
+            },
+            {
+              "id": "production-function",
+              "title": "生産関数",
+              "slug": "production-function",
+              "type": "unit",
+              "article": "content/articles/economics/micro/production-function.md"
+            },
+            {
+              "id": "cost-theory",
+              "title": "費用理論",
+              "slug": "cost-theory",
+              "type": "unit",
+              "article": "content/articles/economics/micro/cost-theory.md"
+            },
+            {
+              "id": "profit-maximization",
+              "title": "企業の利潤最大化",
+              "slug": "profit-maximization",
+              "type": "unit",
+              "article": "content/articles/economics/micro/profit-maximization.md"
+            },
+            {
+              "id": "perfect-competition",
+              "title": "完全競争市場",
+              "slug": "perfect-competition",
+              "type": "unit",
+              "article": "content/articles/economics/micro/perfect-competition.md"
+            },
+            {
+              "id": "monopoly",
+              "title": "独占市場",
+              "slug": "monopoly",
+              "type": "unit",
+              "article": "content/articles/economics/micro/monopoly.md"
+            },
+            {
+              "id": "oligopoly",
+              "title": "寡占市場",
+              "slug": "oligopoly",
+              "type": "unit",
+              "article": "content/articles/economics/micro/oligopoly.md"
+            },
+            {
+              "id": "monopolistic-competition",
+              "title": "独占的競争",
+              "slug": "monopolistic-competition",
+              "type": "unit",
+              "article": "content/articles/economics/micro/monopolistic-competition.md"
+            },
+            {
+              "id": "market-failure",
+              "title": "市場の失敗",
+              "slug": "market-failure",
+              "type": "unit",
+              "article": "content/articles/economics/micro/market-failure.md"
+            },
+            {
+              "id": "externalities",
+              "title": "外部性",
+              "slug": "externalities",
+              "type": "unit",
+              "article": "content/articles/economics/micro/externalities.md"
+            },
+            {
+              "id": "public-goods",
+              "title": "公共財",
+              "slug": "public-goods",
+              "type": "unit",
+              "article": "content/articles/economics/micro/public-goods.md"
+            },
+            {
+              "id": "information-asymmetry",
+              "title": "情報の非対称性",
+              "slug": "information-asymmetry",
+              "type": "unit",
+              "article": "content/articles/economics/micro/information-asymmetry.md"
+            },
+            {
+              "id": "factor-markets",
+              "title": "生産要素市場",
+              "slug": "factor-markets",
+              "type": "unit",
+              "article": "content/articles/economics/micro/factor-markets.md"
+            },
+            {
+              "id": "income-distribution",
+              "title": "所得分配と社会厚生",
+              "slug": "income-distribution",
+              "type": "unit",
+              "article": "content/articles/economics/micro/income-distribution.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "運営管理",
+      "slug": "operations",
+      "type": "subject",
+      "children": [
+        {
+          "id": "production-management",
+          "title": "生産管理",
+          "slug": "production",
+          "type": "category",
+          "children": [
+            {
+              "id": "qcd",
+              "title": "生産管理の基礎（QCD）",
+              "slug": "qcd",
+              "type": "unit",
+              "article": "content/articles/operations/production/qcd.md"
+            },
+            {
+              "id": "production-systems",
+              "title": "生産形態と生産方式",
+              "slug": "production-systems",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-systems.md"
+            },
+            {
+              "id": "production-planning",
+              "title": "生産計画",
+              "slug": "production-planning",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-planning.md"
+            },
+            {
+              "id": "production-control",
+              "title": "生産統制",
+              "slug": "production-control",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-control.md"
+            },
+            {
+              "id": "quality-control",
+              "title": "品質管理（QC七つ道具・5S）",
+              "slug": "quality-control",
+              "type": "unit",
+              "article": "content/articles/operations/production/quality-control.md"
+            },
+            {
+              "id": "industrial-engineering",
+              "title": "IE（インダストリアル・エンジニアリング）",
+              "slug": "industrial-engineering",
+              "type": "unit",
+              "article": "content/articles/operations/production/industrial-engineering.md"
+            },
+            {
+              "id": "inventory-management",
+              "title": "資材・在庫管理",
+              "slug": "inventory-management",
+              "type": "unit",
+              "article": "content/articles/operations/production/inventory-management.md"
+            },
+            {
+              "id": "factory-layout",
+              "title": "工場レイアウトと設備管理",
+              "slug": "factory-layout",
+              "type": "unit",
+              "article": "content/articles/operations/production/factory-layout.md"
+            },
+            {
+              "id": "production-is",
+              "title": "生産情報システム",
+              "slug": "production-is",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-is.md"
+            },
+            {
+              "id": "production-management-basics",
+              "title": "生産管理の基礎とQCD",
+              "slug": "production-management-basics",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-management-basics.md"
+            },
+            {
+              "id": "production-types",
+              "title": "生産形態（個別・ロット・連続）",
+              "slug": "production-types",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-types.md"
+            },
+            {
+              "id": "make-to-stock-order",
+              "title": "見込生産・受注生産",
+              "slug": "make-to-stock-order",
+              "type": "unit",
+              "article": "content/articles/operations/production/make-to-stock-order.md"
+            },
+            {
+              "id": "production-methods",
+              "title": "生産方式（ライン・セル等）",
+              "slug": "production-methods",
+              "type": "unit",
+              "article": "content/articles/operations/production/production-methods.md"
+            },
+            {
+              "id": "toyota-production-system",
+              "title": "トヨタ生産方式・JIT・かんばん",
+              "slug": "toyota-production-system",
+              "type": "unit",
+              "article": "content/articles/operations/production/toyota-production-system.md"
+            },
+            {
+              "id": "demand-forecasting",
+              "title": "需要予測",
+              "slug": "demand-forecasting",
+              "type": "unit",
+              "article": "content/articles/operations/production/demand-forecasting.md"
+            },
+            {
+              "id": "aggregate-planning",
+              "title": "総合生産計画",
+              "slug": "aggregate-planning",
+              "type": "unit",
+              "article": "content/articles/operations/production/aggregate-planning.md"
+            },
+            {
+              "id": "scheduling",
+              "title": "スケジューリング",
+              "slug": "scheduling",
+              "type": "unit",
+              "article": "content/articles/operations/production/scheduling.md"
+            },
+            {
+              "id": "mrp",
+              "title": "MRP・資材所要量計画",
+              "slug": "mrp",
+              "type": "unit",
+              "article": "content/articles/operations/production/mrp.md"
+            },
+            {
+              "id": "eoq",
+              "title": "経済的発注量（EOQ）",
+              "slug": "eoq",
+              "type": "unit",
+              "article": "content/articles/operations/production/eoq.md"
+            },
+            {
+              "id": "abc-analysis",
+              "title": "ABC分析",
+              "slug": "abc-analysis",
+              "type": "unit",
+              "article": "content/articles/operations/production/abc-analysis.md"
+            },
+            {
+              "id": "quality-management",
+              "title": "品質管理の基本",
+              "slug": "quality-management",
+              "type": "unit",
+              "article": "content/articles/operations/production/quality-management.md"
+            },
+            {
+              "id": "qc-tools",
+              "title": "QC七つ道具・新QC七つ道具",
+              "slug": "qc-tools",
+              "type": "unit",
+              "article": "content/articles/operations/production/qc-tools.md"
+            },
+            {
+              "id": "statistical-quality-control",
+              "title": "統計的品質管理",
+              "slug": "statistical-quality-control",
+              "type": "unit",
+              "article": "content/articles/operations/production/statistical-quality-control.md"
+            },
+            {
+              "id": "tqm",
+              "title": "TQM・品質保証",
+              "slug": "tqm",
+              "type": "unit",
+              "article": "content/articles/operations/production/tqm.md"
+            },
+            {
+              "id": "five-s",
+              "title": "5Sと目で見る管理",
+              "slug": "five-s",
+              "type": "unit",
+              "article": "content/articles/operations/production/five-s.md"
+            },
+            {
+              "id": "ie",
+              "title": "IEの基本",
+              "slug": "ie",
+              "type": "unit",
+              "article": "content/articles/operations/production/ie.md"
+            },
+            {
+              "id": "method-study",
+              "title": "方法研究",
+              "slug": "method-study",
+              "type": "unit",
+              "article": "content/articles/operations/production/method-study.md"
+            },
+            {
+              "id": "work-measurement",
+              "title": "作業測定・標準時間",
+              "slug": "work-measurement",
+              "type": "unit",
+              "article": "content/articles/operations/production/work-measurement.md"
+            },
+            {
+              "id": "layout",
+              "title": "工場レイアウト",
+              "slug": "layout",
+              "type": "unit",
+              "article": "content/articles/operations/production/layout.md"
+            },
+            {
+              "id": "facility-management",
+              "title": "設備管理・保全",
+              "slug": "facility-management",
+              "type": "unit",
+              "article": "content/articles/operations/production/facility-management.md"
+            },
+            {
+              "id": "value-engineering",
+              "title": "VE・価値工学",
+              "slug": "value-engineering",
+              "type": "unit",
+              "article": "content/articles/operations/production/value-engineering.md"
+            },
+            {
+              "id": "supply-chain-production",
+              "title": "サプライチェーンと生産情報システム",
+              "slug": "supply-chain-production",
+              "type": "unit",
+              "article": "content/articles/operations/production/supply-chain-production.md"
+            }
+          ]
+        },
+        {
+          "id": "store-sales-management",
+          "title": "店舗・販売管理",
+          "slug": "store-sales",
+          "type": "category",
+          "children": [
+            {
+              "id": "store-location",
+              "title": "店舗立地と店舗施設",
+              "slug": "store-location",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/store-location.md"
+            },
+            {
+              "id": "merchandising",
+              "title": "マーチャンダイジング",
+              "slug": "merchandising",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/merchandising.md"
+            },
+            {
+              "id": "logistics",
+              "title": "物流・ロジスティクス管理",
+              "slug": "logistics",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/logistics.md"
+            },
+            {
+              "id": "sales-related-law",
+              "title": "販売流通に関する法律知識",
+              "slug": "sales-related-law",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/sales-related-law.md"
+            },
+            {
+              "id": "retail-basics",
+              "title": "店舗・小売業の基礎",
+              "slug": "retail-basics",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/retail-basics.md"
+            },
+            {
+              "id": "trade-area",
+              "title": "商圏分析",
+              "slug": "trade-area",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/trade-area.md"
+            },
+            {
+              "id": "store-design",
+              "title": "店舗施設・店舗設計",
+              "slug": "store-design",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/store-design.md"
+            },
+            {
+              "id": "assortment",
+              "title": "品揃え・商品構成",
+              "slug": "assortment",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/assortment.md"
+            },
+            {
+              "id": "pricing-retail",
+              "title": "小売価格政策",
+              "slug": "pricing-retail",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/pricing-retail.md"
+            },
+            {
+              "id": "sales-forecast",
+              "title": "販売予測・販売計画",
+              "slug": "sales-forecast",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/sales-forecast.md"
+            },
+            {
+              "id": "inventory-retail",
+              "title": "店舗在庫管理",
+              "slug": "inventory-retail",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/inventory-retail.md"
+            },
+            {
+              "id": "purchasing",
+              "title": "仕入管理",
+              "slug": "purchasing",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/purchasing.md"
+            },
+            {
+              "id": "pos",
+              "title": "POSシステムとID-POS",
+              "slug": "pos",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/pos.md"
+            },
+            {
+              "id": "jan-rfid",
+              "title": "JANコード・RFID・自動認識",
+              "slug": "jan-rfid",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/jan-rfid.md"
+            },
+            {
+              "id": "crm-retail",
+              "title": "FSP・CRM・顧客管理",
+              "slug": "crm-retail",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/crm-retail.md"
+            },
+            {
+              "id": "ecommerce",
+              "title": "EC・オムニチャネル",
+              "slug": "ecommerce",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/ecommerce.md"
+            },
+            {
+              "id": "distribution-center",
+              "title": "物流センター・倉庫管理",
+              "slug": "distribution-center",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/distribution-center.md"
+            },
+            {
+              "id": "transportation",
+              "title": "輸配送管理",
+              "slug": "transportation",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/transportation.md"
+            },
+            {
+              "id": "supply-chain",
+              "title": "SCM",
+              "slug": "supply-chain",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/supply-chain.md"
+            },
+            {
+              "id": "commercial-district",
+              "title": "商店街・中心市街地活性化",
+              "slug": "commercial-district",
+              "type": "unit",
+              "article": "content/articles/operations/store-sales/commercial-district.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-law",
+      "title": "経営法務",
+      "slug": "business-law",
+      "type": "subject",
+      "children": [
+        {
+          "id": "company-law",
+          "title": "会社法",
+          "slug": "company-law",
+          "type": "category",
+          "children": [
+            {
+              "id": "incorporation",
+              "title": "会社の設立",
+              "slug": "incorporation",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/incorporation.md"
+            },
+            {
+              "id": "corporate-governance-structure",
+              "title": "株式会社の機関設計",
+              "slug": "corporate-governance-structure",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/corporate-governance-structure.md"
+            },
+            {
+              "id": "corporate-reorganization",
+              "title": "組織再編（合併・会社分割・株式交換）",
+              "slug": "corporate-reorganization",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/corporate-reorganization.md"
+            },
+            {
+              "id": "sme-corporate-law",
+              "title": "中小企業に関連する会社法務",
+              "slug": "sme-corporate-law",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/sme-corporate-law.md"
+            },
+            {
+              "id": "company-types",
+              "title": "会社の種類",
+              "slug": "company-types",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/company-types.md"
+            },
+            {
+              "id": "shares",
+              "title": "株式",
+              "slug": "shares",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/shares.md"
+            },
+            {
+              "id": "shareholders-meeting",
+              "title": "株主総会",
+              "slug": "shareholders-meeting",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/shareholders-meeting.md"
+            },
+            {
+              "id": "directors-board",
+              "title": "取締役・取締役会",
+              "slug": "directors-board",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/directors-board.md"
+            },
+            {
+              "id": "auditors-committees",
+              "title": "監査役・各種委員会設置会社",
+              "slug": "auditors-committees",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/auditors-committees.md"
+            },
+            {
+              "id": "accounting-dividends",
+              "title": "会社の計算・剰余金配当",
+              "slug": "accounting-dividends",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/accounting-dividends.md"
+            },
+            {
+              "id": "capital-financing-law",
+              "title": "募集株式・新株予約権・社債",
+              "slug": "capital-financing-law",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/capital-financing-law.md"
+            },
+            {
+              "id": "business-transfer",
+              "title": "事業譲渡",
+              "slug": "business-transfer",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/business-transfer.md"
+            },
+            {
+              "id": "merger",
+              "title": "合併",
+              "slug": "merger",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/merger.md"
+            },
+            {
+              "id": "company-split",
+              "title": "会社分割",
+              "slug": "company-split",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/company-split.md"
+            },
+            {
+              "id": "share-exchange-transfer",
+              "title": "株式交換・株式移転",
+              "slug": "share-exchange-transfer",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/share-exchange-transfer.md"
+            },
+            {
+              "id": "stock-delivery",
+              "title": "株式交付",
+              "slug": "stock-delivery",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/stock-delivery.md"
+            },
+            {
+              "id": "dissolution-liquidation",
+              "title": "解散・清算",
+              "slug": "dissolution-liquidation",
+              "type": "unit",
+              "article": "content/articles/business-law/company-law/dissolution-liquidation.md"
+            }
+          ]
+        },
+        {
+          "id": "intellectual-property",
+          "title": "知的財産権",
+          "slug": "ip",
+          "type": "category",
+          "children": [
+            {
+              "id": "patent-utility-model",
+              "title": "特許権・実用新案権",
+              "slug": "patent-utility-model",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/patent-utility-model.md"
+            },
+            {
+              "id": "design-trademark",
+              "title": "意匠権・商標権",
+              "slug": "design-trademark",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/design-trademark.md"
+            },
+            {
+              "id": "copyright",
+              "title": "著作権",
+              "slug": "copyright",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/copyright.md"
+            },
+            {
+              "id": "ip-management",
+              "title": "知的財産権の管理と活用",
+              "slug": "ip-management",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/ip-management.md"
+            },
+            {
+              "id": "ip-overview",
+              "title": "知的財産権の全体像",
+              "slug": "ip-overview",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/ip-overview.md"
+            },
+            {
+              "id": "patent",
+              "title": "特許権",
+              "slug": "patent",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/patent.md"
+            },
+            {
+              "id": "utility-model",
+              "title": "実用新案権",
+              "slug": "utility-model",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/utility-model.md"
+            },
+            {
+              "id": "design-right",
+              "title": "意匠権",
+              "slug": "design-right",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/design-right.md"
+            },
+            {
+              "id": "trademark",
+              "title": "商標権",
+              "slug": "trademark",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/trademark.md"
+            },
+            {
+              "id": "unfair-competition",
+              "title": "不正競争防止法",
+              "slug": "unfair-competition",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/unfair-competition.md"
+            },
+            {
+              "id": "trade-secrets",
+              "title": "営業秘密",
+              "slug": "trade-secrets",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/trade-secrets.md"
+            },
+            {
+              "id": "ip-licensing",
+              "title": "ライセンス契約と知財活用",
+              "slug": "ip-licensing",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/ip-licensing.md"
+            },
+            {
+              "id": "international-ip",
+              "title": "知的財産権の国際的保護",
+              "slug": "international-ip",
+              "type": "unit",
+              "article": "content/articles/business-law/ip/international-ip.md"
+            }
+          ]
+        },
+        {
+          "id": "business-legal-affairs",
+          "title": "取引・契約に関する法律知識",
+          "slug": "contracts",
+          "type": "category",
+          "children": [
+            {
+              "id": "civil-law-basics",
+              "title": "民法の基礎（契約・債権債務）",
+              "slug": "civil-law-basics",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/civil-law-basics.md"
+            },
+            {
+              "id": "insolvency-law",
+              "title": "倒産法制",
+              "slug": "insolvency-law",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/insolvency-law.md"
+            },
+            {
+              "id": "financial-instruments-law",
+              "title": "資本市場に関する法律（金融商品取引法等）",
+              "slug": "financial-instruments-law",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/financial-instruments-law.md"
+            },
+            {
+              "id": "antitrust-and-others",
+              "title": "独占禁止法とその他の法律知識",
+              "slug": "antitrust-and-others",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/antitrust-and-others.md"
+            },
+            {
+              "id": "legal-acts",
+              "title": "法律行為・意思表示",
+              "slug": "legal-acts",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/legal-acts.md"
+            },
+            {
+              "id": "agency",
+              "title": "代理",
+              "slug": "agency",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/agency.md"
+            },
+            {
+              "id": "prescription",
+              "title": "時効",
+              "slug": "prescription",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/prescription.md"
+            },
+            {
+              "id": "contract-basics",
+              "title": "契約の成立・効力",
+              "slug": "contract-basics",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/contract-basics.md"
+            },
+            {
+              "id": "default",
+              "title": "債務不履行",
+              "slug": "default",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/default.md"
+            },
+            {
+              "id": "damages",
+              "title": "損害賠償",
+              "slug": "damages",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/damages.md"
+            },
+            {
+              "id": "guarantee",
+              "title": "保証・連帯保証",
+              "slug": "guarantee",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/guarantee.md"
+            },
+            {
+              "id": "security-interests",
+              "title": "担保物権",
+              "slug": "security-interests",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/security-interests.md"
+            },
+            {
+              "id": "claims-transfer",
+              "title": "債権譲渡",
+              "slug": "claims-transfer",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/claims-transfer.md"
+            },
+            {
+              "id": "commercial-transactions",
+              "title": "商行為・商法の基礎",
+              "slug": "commercial-transactions",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/commercial-transactions.md"
+            },
+            {
+              "id": "antitrust-law",
+              "title": "独占禁止法",
+              "slug": "antitrust-law",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/antitrust-law.md"
+            },
+            {
+              "id": "subcontract-act",
+              "title": "下請法・取適法等の取引適正化",
+              "slug": "subcontract-act",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/subcontract-act.md"
+            },
+            {
+              "id": "consumer-contract",
+              "title": "消費者契約法",
+              "slug": "consumer-contract",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/consumer-contract.md"
+            },
+            {
+              "id": "specified-commercial-transactions",
+              "title": "特定商取引法",
+              "slug": "specified-commercial-transactions",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/specified-commercial-transactions.md"
+            },
+            {
+              "id": "product-liability",
+              "title": "製造物責任法（PL法）",
+              "slug": "product-liability",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/product-liability.md"
+            },
+            {
+              "id": "personal-information-law",
+              "title": "個人情報保護法",
+              "slug": "personal-information-law",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/personal-information-law.md"
+            },
+            {
+              "id": "business-succession-law",
+              "title": "事業承継に関する法務",
+              "slug": "business-succession-law",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/business-succession-law.md"
+            },
+            {
+              "id": "international-contracts",
+              "title": "国際取引・国際契約の基礎",
+              "slug": "international-contracts",
+              "type": "unit",
+              "article": "content/articles/business-law/contracts/international-contracts.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "information-systems",
+      "title": "経営情報システム",
+      "slug": "information-systems",
+      "type": "subject",
+      "children": [
+        {
+          "id": "it-fundamentals",
+          "title": "情報システムの基礎技術",
+          "slug": "it-fundamentals",
+          "type": "category",
+          "children": [
+            {
+              "id": "hardware-basics",
+              "title": "コンピュータの基礎知識（ハードウェア）",
+              "slug": "hardware-basics",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/hardware-basics.md"
+            },
+            {
+              "id": "software-os",
+              "title": "ソフトウェアとOS",
+              "slug": "software-os",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/software-os.md"
+            },
+            {
+              "id": "networks-internet",
+              "title": "ネットワークとインターネット技術",
+              "slug": "networks-internet",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/networks-internet.md"
+            },
+            {
+              "id": "databases",
+              "title": "データベース",
+              "slug": "databases",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/databases.md"
+            },
+            {
+              "id": "system-development",
+              "title": "システム開発手法",
+              "slug": "system-development",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/system-development.md"
+            },
+            {
+              "id": "emerging-tech",
+              "title": "新技術動向（AI・IoT・クラウド）",
+              "slug": "emerging-tech",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/emerging-tech.md"
+            },
+            {
+              "id": "information-representation",
+              "title": "情報表現・2進数・文字コード",
+              "slug": "information-representation",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/information-representation.md"
+            },
+            {
+              "id": "cpu-memory",
+              "title": "CPU・メモリ・記憶装置",
+              "slug": "cpu-memory",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/cpu-memory.md"
+            },
+            {
+              "id": "io-devices",
+              "title": "入出力装置",
+              "slug": "io-devices",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/io-devices.md"
+            },
+            {
+              "id": "file-system",
+              "title": "ファイルシステム",
+              "slug": "file-system",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/file-system.md"
+            },
+            {
+              "id": "programming-basics",
+              "title": "プログラミングの基礎",
+              "slug": "programming-basics",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/programming-basics.md"
+            },
+            {
+              "id": "algorithms-data-structures",
+              "title": "アルゴリズムとデータ構造",
+              "slug": "algorithms-data-structures",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/algorithms-data-structures.md"
+            },
+            {
+              "id": "database-basics",
+              "title": "データベースの基礎",
+              "slug": "database-basics",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/database-basics.md"
+            },
+            {
+              "id": "relational-model",
+              "title": "関係データベースと正規化",
+              "slug": "relational-model",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/relational-model.md"
+            },
+            {
+              "id": "sql",
+              "title": "SQL",
+              "slug": "sql",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/sql.md"
+            },
+            {
+              "id": "transaction",
+              "title": "トランザクションと排他制御",
+              "slug": "transaction",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/transaction.md"
+            },
+            {
+              "id": "network-basics",
+              "title": "ネットワークの基礎",
+              "slug": "network-basics",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/network-basics.md"
+            },
+            {
+              "id": "tcp-ip",
+              "title": "TCP/IP",
+              "slug": "tcp-ip",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/tcp-ip.md"
+            },
+            {
+              "id": "lan-wan",
+              "title": "LAN・WAN・無線LAN",
+              "slug": "lan-wan",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/lan-wan.md"
+            },
+            {
+              "id": "internet-tech",
+              "title": "Web・DNS・メール",
+              "slug": "internet-tech",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/internet-tech.md"
+            },
+            {
+              "id": "cloud-computing",
+              "title": "クラウドコンピューティング",
+              "slug": "cloud-computing",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/cloud-computing.md"
+            },
+            {
+              "id": "virtualization-container",
+              "title": "仮想化・コンテナ",
+              "slug": "virtualization-container",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/virtualization-container.md"
+            },
+            {
+              "id": "ai-machine-learning",
+              "title": "AI・機械学習",
+              "slug": "ai-machine-learning",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/ai-machine-learning.md"
+            },
+            {
+              "id": "iot-edge",
+              "title": "IoT・エッジコンピューティング",
+              "slug": "iot-edge",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/iot-edge.md"
+            },
+            {
+              "id": "security-basics",
+              "title": "情報セキュリティの基本概念",
+              "slug": "security-basics",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/security-basics.md"
+            },
+            {
+              "id": "cryptography",
+              "title": "暗号技術",
+              "slug": "cryptography",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/cryptography.md"
+            },
+            {
+              "id": "authentication",
+              "title": "認証・アクセス制御",
+              "slug": "authentication",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/authentication.md"
+            },
+            {
+              "id": "network-security",
+              "title": "ネットワークセキュリティ",
+              "slug": "network-security",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/network-security.md"
+            },
+            {
+              "id": "malware-attacks",
+              "title": "マルウェア・サイバー攻撃",
+              "slug": "malware-attacks",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/malware-attacks.md"
+            },
+            {
+              "id": "vulnerability-management",
+              "title": "脆弱性管理",
+              "slug": "vulnerability-management",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/vulnerability-management.md"
+            },
+            {
+              "id": "security-management",
+              "title": "情報セキュリティ管理",
+              "slug": "security-management",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/security-management.md"
+            },
+            {
+              "id": "business-continuity",
+              "title": "BCP・災害対策・バックアップ",
+              "slug": "business-continuity",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/business-continuity.md"
+            },
+            {
+              "id": "development-lifecycle",
+              "title": "システム開発ライフサイクル",
+              "slug": "development-lifecycle",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/development-lifecycle.md"
+            },
+            {
+              "id": "requirements-definition",
+              "title": "要件定義",
+              "slug": "requirements-definition",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/requirements-definition.md"
+            },
+            {
+              "id": "development-methodologies",
+              "title": "ウォーターフォール・アジャイル開発",
+              "slug": "development-methodologies",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/development-methodologies.md"
+            },
+            {
+              "id": "modeling",
+              "title": "UML・モデリング",
+              "slug": "modeling",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/modeling.md"
+            },
+            {
+              "id": "testing",
+              "title": "ソフトウェアテスト",
+              "slug": "testing",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/testing.md"
+            },
+            {
+              "id": "project-management",
+              "title": "プロジェクト管理",
+              "slug": "project-management",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/project-management.md"
+            },
+            {
+              "id": "it-service-management",
+              "title": "ITサービス管理",
+              "slug": "it-service-management",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/it-service-management.md"
+            },
+            {
+              "id": "outsourcing",
+              "title": "アウトソーシング・SaaS活用",
+              "slug": "outsourcing",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/outsourcing.md"
+            },
+            {
+              "id": "system-audit",
+              "title": "システム監査",
+              "slug": "system-audit",
+              "type": "unit",
+              "article": "content/articles/information-systems/it-fundamentals/system-audit.md"
+            }
+          ]
+        },
+        {
+          "id": "management-information",
+          "title": "経営情報管理",
+          "slug": "management-information",
+          "type": "category",
+          "children": [
+            {
+              "id": "is-strategy",
+              "title": "情報システム戦略",
+              "slug": "is-strategy",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/is-strategy.md"
+            },
+            {
+              "id": "information-security",
+              "title": "情報セキュリティ",
+              "slug": "information-security",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/information-security.md"
+            },
+            {
+              "id": "external-information-resources",
+              "title": "外部情報資源の活用",
+              "slug": "external-information-resources",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/external-information-resources.md"
+            },
+            {
+              "id": "data-analysis",
+              "title": "統計解析・データ活用",
+              "slug": "data-analysis",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/data-analysis.md"
+            },
+            {
+              "id": "information-strategy",
+              "title": "情報システム戦略",
+              "slug": "information-strategy",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/information-strategy.md"
+            },
+            {
+              "id": "business-process",
+              "title": "業務プロセスとBPR",
+              "slug": "business-process",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/business-process.md"
+            },
+            {
+              "id": "erp",
+              "title": "ERP・基幹業務システム",
+              "slug": "erp",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/erp.md"
+            },
+            {
+              "id": "scm-crm-systems",
+              "title": "SCM・CRMシステム",
+              "slug": "scm-crm-systems",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/scm-crm-systems.md"
+            },
+            {
+              "id": "data-warehouse-bi",
+              "title": "DWH・BI",
+              "slug": "data-warehouse-bi",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/data-warehouse-bi.md"
+            },
+            {
+              "id": "digital-transformation",
+              "title": "DX・デジタル経営",
+              "slug": "digital-transformation",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/digital-transformation.md"
+            },
+            {
+              "id": "it-governance",
+              "title": "ITガバナンス",
+              "slug": "it-governance",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/it-governance.md"
+            },
+            {
+              "id": "it-investment",
+              "title": "IT投資評価",
+              "slug": "it-investment",
+              "type": "unit",
+              "article": "content/articles/information-systems/management-information/it-investment.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sme-policy",
+      "title": "中小企業経営・中小企業政策",
+      "slug": "sme-policy",
+      "type": "subject",
+      "children": [
+        {
+          "id": "sme-management",
+          "title": "中小企業経営",
+          "slug": "sme-management",
+          "type": "category",
+          "children": [
+            {
+              "id": "sme-definition",
+              "title": "中小企業の定義と位置づけ",
+              "slug": "sme-definition",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/sme-definition.md"
+            },
+            {
+              "id": "sme-white-paper",
+              "title": "中小企業白書に見る経営実態",
+              "slug": "sme-white-paper",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/sme-white-paper.md"
+            },
+            {
+              "id": "sme-challenges",
+              "title": "中小企業の経営課題",
+              "slug": "sme-challenges",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/sme-challenges.md"
+            },
+            {
+              "id": "small-business-characteristics",
+              "title": "小規模企業の特性",
+              "slug": "small-business-characteristics",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/small-business-characteristics.md"
+            },
+            {
+              "id": "sme-role",
+              "title": "中小企業の役割・位置づけ",
+              "slug": "sme-role",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/sme-role.md"
+            },
+            {
+              "id": "sme-structure",
+              "title": "中小企業の企業数・従業者・付加価値構造",
+              "slug": "sme-structure",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/sme-structure.md"
+            },
+            {
+              "id": "small-business-white-paper",
+              "title": "小規模企業白書の読み方",
+              "slug": "small-business-white-paper",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/small-business-white-paper.md"
+            },
+            {
+              "id": "business-performance",
+              "title": "中小企業の業況・収益・投資動向",
+              "slug": "business-performance",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/business-performance.md"
+            },
+            {
+              "id": "productivity",
+              "title": "中小企業の生産性",
+              "slug": "productivity",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/productivity.md"
+            },
+            {
+              "id": "labor-shortage",
+              "title": "人手不足・雇用・賃金",
+              "slug": "labor-shortage",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/labor-shortage.md"
+            },
+            {
+              "id": "digitalization",
+              "title": "中小企業のデジタル化・DX",
+              "slug": "digitalization",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/digitalization.md"
+            },
+            {
+              "id": "innovation-sme",
+              "title": "中小企業のイノベーション",
+              "slug": "innovation-sme",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/innovation-sme.md"
+            },
+            {
+              "id": "globalization-sme",
+              "title": "中小企業の海外展開",
+              "slug": "globalization-sme",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/globalization-sme.md"
+            },
+            {
+              "id": "business-succession",
+              "title": "事業承継・M&A",
+              "slug": "business-succession",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/business-succession.md"
+            },
+            {
+              "id": "startup-sme",
+              "title": "創業・スタートアップ",
+              "slug": "startup-sme",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/startup-sme.md"
+            },
+            {
+              "id": "regional-economy",
+              "title": "地域経済と中小企業",
+              "slug": "regional-economy",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-management/regional-economy.md"
+            }
+          ]
+        },
+        {
+          "id": "sme-policy-detail",
+          "title": "中小企業政策",
+          "slug": "sme-policy-detail",
+          "type": "category",
+          "children": [
+            {
+              "id": "sme-related-law",
+              "title": "中小企業に関する法規",
+              "slug": "sme-related-law",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/sme-related-law.md"
+            },
+            {
+              "id": "startup-support",
+              "title": "創業支援政策",
+              "slug": "startup-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/startup-support.md"
+            },
+            {
+              "id": "management-innovation-support",
+              "title": "経営革新・経営力向上支援",
+              "slug": "management-innovation-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/management-innovation-support.md"
+            },
+            {
+              "id": "financial-support-measures",
+              "title": "金融支援施策",
+              "slug": "financial-support-measures",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/financial-support-measures.md"
+            },
+            {
+              "id": "small-business-measures",
+              "title": "小規模企業施策",
+              "slug": "small-business-measures",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/small-business-measures.md"
+            },
+            {
+              "id": "sme-basic-act",
+              "title": "中小企業基本法",
+              "slug": "sme-basic-act",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/sme-basic-act.md"
+            },
+            {
+              "id": "small-business-basic-act",
+              "title": "小規模企業振興基本法",
+              "slug": "small-business-basic-act",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/small-business-basic-act.md"
+            },
+            {
+              "id": "policy-execution-system",
+              "title": "中小企業政策の実施体系・支援機関",
+              "slug": "policy-execution-system",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/policy-execution-system.md"
+            },
+            {
+              "id": "sme-support-act",
+              "title": "中小企業支援法制の基礎",
+              "slug": "sme-support-act",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/sme-support-act.md"
+            },
+            {
+              "id": "management-improvement",
+              "title": "経営力向上・経営革新支援",
+              "slug": "management-improvement",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/management-improvement.md"
+            },
+            {
+              "id": "business-restructuring",
+              "title": "事業再構築・新事業展開支援",
+              "slug": "business-restructuring",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/business-restructuring.md"
+            },
+            {
+              "id": "productivity-support",
+              "title": "生産性向上・設備投資支援",
+              "slug": "productivity-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/productivity-support.md"
+            },
+            {
+              "id": "digital-support",
+              "title": "デジタル化・IT導入支援",
+              "slug": "digital-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/digital-support.md"
+            },
+            {
+              "id": "business-succession-support",
+              "title": "事業承継支援",
+              "slug": "business-succession-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/business-succession-support.md"
+            },
+            {
+              "id": "revitalization-support",
+              "title": "経営改善・再生支援",
+              "slug": "revitalization-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/revitalization-support.md"
+            },
+            {
+              "id": "finance-support",
+              "title": "政府系金融・制度融資",
+              "slug": "finance-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/finance-support.md"
+            },
+            {
+              "id": "credit-guarantee",
+              "title": "信用保証制度",
+              "slug": "credit-guarantee",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/credit-guarantee.md"
+            },
+            {
+              "id": "subsidies",
+              "title": "補助金・助成施策の考え方",
+              "slug": "subsidies",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/subsidies.md"
+            },
+            {
+              "id": "tax-support",
+              "title": "中小企業向け税制",
+              "slug": "tax-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/tax-support.md"
+            },
+            {
+              "id": "mutual-aid",
+              "title": "小規模企業共済・経営セーフティ共済",
+              "slug": "mutual-aid",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/mutual-aid.md"
+            },
+            {
+              "id": "trade-support",
+              "title": "取引適正化・販路開拓支援",
+              "slug": "trade-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/trade-support.md"
+            },
+            {
+              "id": "regional-support",
+              "title": "地域・商店街・地域資源支援",
+              "slug": "regional-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/regional-support.md"
+            },
+            {
+              "id": "global-support",
+              "title": "海外展開支援",
+              "slug": "global-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/global-support.md"
+            },
+            {
+              "id": "human-resources-support",
+              "title": "人材確保・雇用支援",
+              "slug": "human-resources-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/human-resources-support.md"
+            },
+            {
+              "id": "research-development-support",
+              "title": "研究開発・ものづくり支援",
+              "slug": "research-development-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/research-development-support.md"
+            },
+            {
+              "id": "disaster-support",
+              "title": "災害・事業継続支援",
+              "slug": "disaster-support",
+              "type": "unit",
+              "article": "content/articles/sme-policy/sme-policy-detail/disaster-support.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
