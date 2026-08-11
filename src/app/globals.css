@@ -361,6 +361,9 @@ aside h2 {
 }
 
 .unit-list a:hover strong { color: var(--accent); }
+.unit-list a.completed { opacity: 0.45; }
+.unit-list a.completed:hover,
+.unit-list a.completed:focus-visible { opacity: 0.7; }
 .unit-list span { color: var(--accent); font-family: Georgia, serif; font-size: 0.75rem; }
 .unit-list strong { font-size: 0.92rem; line-height: 1.5; transition: color 140ms ease; }
 .unit-list small { color: var(--muted); }

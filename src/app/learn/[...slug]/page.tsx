@@ -54,7 +54,7 @@ export default async function LearnPage({ params }: LearnPageProps) {
         </nav>
 
         <p className="node-type">{node.type === "unit" ? "学習単元" : "カリキュラム"}</p>
-        <h1>{node.title}</h1>
+        {node.type !== "unit" ? <h1>{node.title}</h1> : null}
 
         {node.type === "unit" ? (
           articleMarkdown ? <><TermLearningWorkspace articleId={node.id} articleTitle={node.title} markdown={articleMarkdown} subject={subject} />{nextUnit ? <NextUnitButton articleId={node.id} nextHref={nextUnit.href} nextTitle={nextUnit.node.title} /> : null}</> : null
@@ -66,7 +66,7 @@ export default async function LearnPage({ params }: LearnPageProps) {
               <h2>{node.type === "subject" ? "カテゴリ" : "学習単元"}</h2>
               <div className="unit-list">
                 {children.map((child, index) => (
-                  <Link href={getNodeHref([...ancestors, node], child)} key={child.id}>
+                  <Link className={child.type === "unit" && completedIds.includes(child.id) ? "completed" : undefined} href={getNodeHref([...ancestors, node], child)} key={child.id}>
                     <span>{String(index + 1).padStart(2, "0")}</span>
                     <strong>{child.title}</strong>
                     {child.children ? <small>{countUnits(child)}単元</small> : null}
