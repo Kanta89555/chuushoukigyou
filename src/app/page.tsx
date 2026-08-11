@@ -22,6 +22,7 @@ export default async function Home() {
   ]);
   const stats = getCurriculumStats();
   const subjects = curriculum.children ?? [];
+  const remainingUnitCount = Math.max(0, stats.unitCount - new Set(completedIds).size);
 
   return (
     <main className="learning-layout">
@@ -38,7 +39,7 @@ export default async function Home() {
         <dl className="stats" aria-label="カリキュラムの概要">
           <div><dt>科目</dt><dd>{stats.subjectCount}</dd></div>
           <div><dt>カテゴリ</dt><dd>{stats.categoryCount}</dd></div>
-          <div><dt>学習単元</dt><dd>{stats.unitCount}</dd></div>
+          <div><dt>未読／全単元</dt><dd>{remainingUnitCount}/{stats.unitCount}</dd></div>
         </dl>
 
         <section className="subject-section">
