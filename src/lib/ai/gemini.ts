@@ -50,7 +50,7 @@ export async function generateTermExplanation(input: unknown) {
     },
   });
 
-  if (!response.text) throw new Error("Gemini returned an empty response.");
+  if (!response.text) throw new Error("AI returned an empty response.");
   return termExplanationSchema.parse(JSON.parse(response.text));
 }
 
@@ -67,6 +67,6 @@ export async function generateCompanyAnalysis(input: unknown) {
       temperature: 0.2,
     },
   });
-  if (!response.text) throw new Error("Gemini returned an empty response.");
+  if (!response.text) throw new Error("AI returned an empty response.");
   return companyAnalysisSchema.parse(JSON.parse(response.text));
 }

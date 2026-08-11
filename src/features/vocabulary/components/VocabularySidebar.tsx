@@ -89,24 +89,44 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
       {tab === "vocabulary" ? (
         filteredVocabulary.length ? <ul className="vocabulary-list">{filteredVocabulary.map((item) => <VocabularyListItem item={item} key={item.id} onDelete={removeVocabulary} onToggle={() => setOpenId(openId === item.id ? null : item.id)} open={openId === item.id} />)}</ul> : <EmptyState hasItems={items.length > 0} type="vocabulary" />
       ) : (
-        filteredAnalyses.length ? <ul className="vocabulary-list">{filteredAnalyses.map((item) => (
-          <li className="vocabulary-item" key={item.id}>
-            <div className="vocabulary-item-content">
-              <div className="vocabulary-item-row">
-                <button aria-expanded={openId === item.id} className="vocabulary-item-toggle" onClick={() => setOpenId(openId === item.id ? null : item.id)} type="button"><strong>{item.selectedContent}</strong><span>{item.articleTitle}</span></button>
-                <button aria-label={`${item.selectedContent}の企業分析を削除`} className="vocabulary-delete-button analysis-delete-button" onClick={() => void removeAnalysis(item.id)} type="button">削除</button>
-              </div>
-              {openId === item.id ? <div className="vocabulary-detail saved-analysis-detail"><strong>現状分析</strong><p>{item.analysis.currentAnalysis}</p><strong>推奨する方針</strong><ul>{item.analysis.recommendations.map((recommendation, index) => <li key={`${item.id}-${index}`}>{recommendation}</li>)}</ul></div> : null}
-            </div>
-          </li>
-        ))}</ul> : <EmptyState hasItems={analysisItems.length > 0} type="analysis" />
+        filteredAnalyses.length ? <ul className="vocabulary-list">{filteredAnalyses.map((item) => <AnalysisListItem item={item} key={item.id} onDelete={removeAnalysis} onToggle={() => setOpenId(openId === item.id ? null : item.id)} open={openId === item.id} />)}</ul> : <EmptyState hasItems={analysisItems.length > 0} type="analysis" />
       )}
     </aside>
   );
 }
 
 function EmptyState({ hasItems, type }: { hasItems: boolean; type: "vocabulary" | "analysis" }) {
-  return <div className="vocabulary-empty"><span className="empty-book" aria-hidden="true">◇</span><h3>{hasItems ? "検索結果がありません" : type === "vocabulary" ? "まだ用語がありません" : "まだ企業分析がありません"}</h3><p>{type === "vocabulary" ? "記事の文字を選択し、Geminiの解説から保存できます。" : "記事の文字を選択し、自社分析の結果から保存できます。"}</p></div>;
+  return <div className="vocabulary-empty"><span className="empty-book" aria-hidden="true">◇</span><h3>{hasItems ? "検索結果がありません" : type === "vocabulary" ? "まだ用語がありません" : "まだ企業分析がありません"}</h3><p>{type === "vocabulary" ? "記事の文字を選択し、AIの解説から保存できます。" : "記事の文字を選択し、自社分析の結果から保存できます。"}</p></div>;
+}
+
+type AnalysisListItemProps = { item: SavedCompanyAnalysis; open: boolean; onToggle: () => void; onDelete: (id: string) => Promise<void> };
+
+function AnalysisListItem({ item, open, onToggle, onDelete }: AnalysisListItemProps) {
+  const startX = useRef<number | null>(null);
+  const [offset, setOffset] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+
+  function pointerDown(event: PointerEvent<HTMLDivElement>) {
+    if (event.pointerType === "mouse") return;
+    startX.current = event.clientX - offset;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+  function pointerMove(event: PointerEvent<HTMLDivElement>) {
+    if (startX.current === null) return;
+    setOffset(Math.max(-84, Math.min(0, event.clientX - startX.current)));
+  }
+  function pointerUp() {
+    if (startX.current === null) return;
+    setOffset(offset < -42 ? -84 : 0);
+    startX.current = null;
+  }
+  async function remove() {
+    setDeleting(true);
+    await onDelete(item.id);
+    setDeleting(false);
+  }
+
+  return <li className="vocabulary-item"><button className="vocabulary-swipe-delete" disabled={deleting} onClick={() => void remove()} type="button">削除</button><div className="vocabulary-item-content" onPointerCancel={pointerUp} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} style={{ transform: `translateX(${offset}px)` }}><div className="vocabulary-item-row"><button aria-expanded={open} className="vocabulary-item-toggle" onClick={onToggle} type="button"><strong>{item.selectedContent}</strong><span>{item.articleTitle}</span></button><button aria-label={`${item.selectedContent}の企業分析を削除`} className="vocabulary-delete-button" disabled={deleting} onClick={() => void remove()} type="button">削除</button></div>{open ? <div className="vocabulary-detail saved-analysis-detail"><strong>現状分析</strong><p>{item.analysis.currentAnalysis}</p><strong>推奨する方針</strong><ul>{item.analysis.recommendations.map((recommendation, index) => <li key={`${item.id}-${index}`}>{recommendation}</li>)}</ul></div> : null}</div></li>;
 }
 
 type VocabularyListItemProps = { item: VocabularyItem; open: boolean; onToggle: () => void; onDelete: (id: string) => Promise<boolean> };

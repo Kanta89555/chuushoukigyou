@@ -622,7 +622,6 @@ aside h2 {
 @media (max-width: 1040px) {
   .vocabulary-close { display: grid; }
   .vocabulary-delete-button { display: none; }
-  .analysis-delete-button { min-width: 44px; min-height: 44px; display: block; }
 }
 
 @media (max-width: 440px) {

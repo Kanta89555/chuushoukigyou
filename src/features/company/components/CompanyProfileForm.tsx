@@ -47,7 +47,7 @@ export function CompanyProfileForm({ initialFields }: { initialFields: CompanyFi
               <button aria-label={`項目${index + 1}を削除`} onClick={() => setFields((current) => current.filter((item) => item.id !== field.id))} type="button">削除</button>
             </div>
             <input id={`company-label-${field.id}`} maxLength={50} onChange={(event) => update(field.id, "label", event.target.value)} placeholder="項目名（例：業種）" value={field.label} />
-            <textarea maxLength={1000} onChange={(event) => update(field.id, "value", event.target.value)} placeholder="Geminiの分析に使う企業情報を入力" rows={4} value={field.value} />
+            <textarea maxLength={1000} onChange={(event) => update(field.id, "value", event.target.value)} placeholder="AIの分析に使う企業情報を入力" rows={4} value={field.value} />
           </section>
         ))}
       </div>

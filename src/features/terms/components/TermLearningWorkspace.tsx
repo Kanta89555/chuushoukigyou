@@ -149,16 +149,16 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
       </div>
 
       {selection ? (
-        <section className="term-explanation" aria-live="polite" aria-label={`${selection.content}のGemini機能`}>
+        <section className="term-explanation" aria-live="polite" aria-label={`${selection.content}のAI機能`}>
           <div className="term-explanation-heading">
-            <div><p className="eyebrow">Gemini</p><h2>{selection.content}</h2></div>
+            <div><p className="eyebrow">AI</p><h2>{selection.content}</h2></div>
             <button aria-label="閉じる" onClick={close} type="button">×</button>
           </div>
           <div className="analysis-mode-actions">
             <button className={mode === "explanation" ? "active" : ""} disabled={status !== "idle"} onClick={explain} type="button">用語を解説</button>
             <button className={mode === "analysis" ? "active" : ""} disabled={status !== "idle"} onClick={analyzeCompany} type="button">自社に当てはめて分析</button>
           </div>
-          {status === "loading" ? <p className="ai-loading">Geminiが生成しています…</p> : null}
+          {status === "loading" ? <p className="ai-loading">AIが生成しています…</p> : null}
           {mode === "explanation" && explanation ? <ExplanationResult explanation={explanation} onSave={save} saving={status === "saving"} /> : null}
           {mode === "analysis" && analysis ? <CompanyAnalysisResult analysis={analysis} onSave={saveAnalysis} saving={status === "saving"} /> : null}
           {message ? <p className="term-message" role="alert">{message}</p> : null}
