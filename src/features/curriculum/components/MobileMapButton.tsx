@@ -1,6 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 export function MobileMapButton() {
+  const pathname = usePathname();
+  if (pathname !== "/" && !pathname.startsWith("/learn/")) return null;
+
   return (
     <button
       aria-controls="mobile-curriculum-drawer"

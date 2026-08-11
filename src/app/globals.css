@@ -408,6 +408,32 @@ aside h2 {
 
 .vocabulary-heading h2 { margin-bottom: 0; }
 
+.saved-content-tabs {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 4px;
+  background: var(--accent-soft);
+  border-radius: 8px;
+}
+
+.saved-content-tabs button {
+  min-height: 44px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.saved-content-tabs button.active {
+  color: var(--accent-dark);
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgb(25 45 35 / 10%);
+}
+
 .vocabulary-count {
   width: 28px;
   height: 28px;
@@ -421,7 +447,7 @@ aside h2 {
 }
 
 .vocabulary-search {
-  margin: 24px 0;
+  margin: 16px 0 24px;
   padding: 9px 11px;
   display: flex;
   align-items: center;
@@ -452,6 +478,8 @@ aside h2 {
 .vocabulary-swipe-delete { position: absolute; z-index: 0; inset: 0 0 0 auto; width: 84px; color: #fff; background: #b52d2d; border: 0; cursor: pointer; }
 .vocabulary-list strong { font-size: 0.84rem; }
 .vocabulary-list span { overflow: hidden; color: var(--muted); font-size: 0.72rem; text-overflow: ellipsis; white-space: nowrap; }
+.saved-analysis-detail ul { margin: 8px 0 0; padding-left: 20px; }
+.saved-analysis-detail li { padding: 4px 0; border: 0; color: var(--muted); font-size: 0.76rem; line-height: 1.6; }
 
 .vocabulary-empty {
   padding: 28px 10px 30px;
@@ -594,6 +622,7 @@ aside h2 {
 @media (max-width: 1040px) {
   .vocabulary-close { display: grid; }
   .vocabulary-delete-button { display: none; }
+  .analysis-delete-button { min-width: 44px; min-height: 44px; display: block; }
 }
 
 @media (max-width: 440px) {

@@ -5,6 +5,7 @@ import { MobileCurriculum } from "@/features/curriculum/components/MobileCurricu
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
 import { findVocabularies } from "@/features/vocabulary/repository";
 import { findCompletedArticleIds } from "@/features/progress/repository";
+import { findSavedCompanyAnalyses } from "@/features/company-analysis/repository";
 import {
   countUnits,
   curriculum,
@@ -14,8 +15,11 @@ import {
 
 export default async function Home() {
   const username = await requireCurrentUsername();
-  const vocabularyItems = await findVocabularies(username);
-  const completedIds = await findCompletedArticleIds(username);
+  const [vocabularyItems, completedIds, analysisItems] = await Promise.all([
+    findVocabularies(username),
+    findCompletedArticleIds(username),
+    findSavedCompanyAnalyses(username),
+  ]);
   const stats = getCurriculumStats();
   const subjects = curriculum.children ?? [];
 
@@ -54,7 +58,7 @@ export default async function Home() {
         </section>
       </article>
 
-      <VocabularySidebar items={vocabularyItems} />
+      <VocabularySidebar analysisItems={analysisItems} items={vocabularyItems} />
     </main>
   );
 }

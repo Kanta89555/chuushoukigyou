@@ -108,6 +108,33 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
     }
   }
 
+  async function saveAnalysis() {
+    if (!selection || !analysis) return;
+    setStatus("saving");
+    setMessage("");
+    try {
+      const response = await fetch("/api/company-analyses", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          selectedContent: selection.content,
+          articleId,
+          articleTitle,
+          subject,
+          analysis,
+        }),
+      });
+      const data = (await response.json()) as { error?: string };
+      if (!response.ok) throw new Error(data.error);
+      window.dispatchEvent(new Event("company-analysis-updated"));
+      setMessage("企業分析を保存しました。");
+    } catch (error) {
+      setMessage(error instanceof Error && error.message ? error.message : "企業分析を保存できませんでした。");
+    } finally {
+      setStatus("idle");
+    }
+  }
+
   function close() {
     setSelection(null);
     setExplanation(null);
@@ -133,7 +160,7 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
           </div>
           {status === "loading" ? <p className="ai-loading">Geminiが生成しています…</p> : null}
           {mode === "explanation" && explanation ? <ExplanationResult explanation={explanation} onSave={save} saving={status === "saving"} /> : null}
-          {mode === "analysis" && analysis ? <CompanyAnalysisResult analysis={analysis} /> : null}
+          {mode === "analysis" && analysis ? <CompanyAnalysisResult analysis={analysis} onSave={saveAnalysis} saving={status === "saving"} /> : null}
           {message ? <p className="term-message" role="alert">{message}</p> : null}
           {needsCompanyProfile ? <Link className="company-settings-link" href="/settings/company">企業情報を設定する →</Link> : null}
         </section>
@@ -146,8 +173,8 @@ function ExplanationResult({ explanation, onSave, saving }: { explanation: TermE
   return <div className="term-explanation-body"><p className="term-definition">{explanation.definition}</p><h3>詳しい説明</h3><p>{explanation.details}</p><h3>具体例</h3><p>{explanation.example}</p><h3>関連用語</h3><p>{explanation.relatedTerms.join("・") || "なし"}</p><h3>試験上のポイント</h3><p>{explanation.examPoint}</p><button className="primary-button" disabled={saving} onClick={onSave} type="button">{saving ? "保存中…" : "単語帳に保存"}</button></div>;
 }
 
-function CompanyAnalysisResult({ analysis }: { analysis: CompanyAnalysis }) {
-  return <div className="company-analysis-result"><h3>分析の前提</h3><p>{analysis.assumptions}</p><h3>考え方の適用</h3><p>{analysis.application}</p><h3>現状分析</h3><p>{analysis.currentAnalysis}</p><AnalysisList title="強み" items={analysis.strengths} /><AnalysisList title="課題" items={analysis.issues} /><AnalysisList title="推奨する方針" items={analysis.recommendations} /><AnalysisList title="具体的なアクション" items={analysis.actions} /><AnalysisList title="リスクと注意点" items={analysis.risks} /><AnalysisList title="追加で確認したい情報" items={analysis.missingInformation} /><h3>学習上のポイント</h3><p>{analysis.learningPoint}</p></div>;
+function CompanyAnalysisResult({ analysis, onSave, saving }: { analysis: CompanyAnalysis; onSave: () => void; saving: boolean }) {
+  return <div className="company-analysis-result"><h3>分析の前提</h3><p>{analysis.assumptions}</p><h3>考え方の適用</h3><p>{analysis.application}</p><h3>現状分析</h3><p>{analysis.currentAnalysis}</p><AnalysisList title="強み" items={analysis.strengths} /><AnalysisList title="課題" items={analysis.issues} /><AnalysisList title="推奨する方針" items={analysis.recommendations} /><AnalysisList title="具体的なアクション" items={analysis.actions} /><AnalysisList title="リスクと注意点" items={analysis.risks} /><AnalysisList title="追加で確認したい情報" items={analysis.missingInformation} /><h3>学習上のポイント</h3><p>{analysis.learningPoint}</p><button className="primary-button" disabled={saving} onClick={onSave} type="button">{saving ? "保存中…" : "企業分析を保存"}</button></div>;
 }
 
 function AnalysisList({ title, items }: { title: string; items: string[] }) {

@@ -9,6 +9,7 @@ import { readArticle } from "@/features/articles/article";
 import { TermLearningWorkspace } from "@/features/terms/components/TermLearningWorkspace";
 import { NextUnitButton } from "@/features/progress/components/NextUnitButton";
 import { findCompletedArticleIds } from "@/features/progress/repository";
+import { findSavedCompanyAnalyses } from "@/features/company-analysis/repository";
 import {
   countUnits,
   findNodeBySlugs,
@@ -22,8 +23,11 @@ type LearnPageProps = {
 
 export default async function LearnPage({ params }: LearnPageProps) {
   const username = await requireCurrentUsername();
-  const vocabularyItems = await findVocabularies(username);
-  const completedIds = await findCompletedArticleIds(username);
+  const [vocabularyItems, completedIds, analysisItems] = await Promise.all([
+    findVocabularies(username),
+    findCompletedArticleIds(username),
+    findSavedCompanyAnalyses(username),
+  ]);
   const { slug } = await params;
   const match = findNodeBySlugs(slug);
   if (!match) notFound();
@@ -78,7 +82,7 @@ export default async function LearnPage({ params }: LearnPageProps) {
         )}
       </article>
 
-      <VocabularySidebar items={vocabularyItems} />
+      <VocabularySidebar analysisItems={analysisItems} items={vocabularyItems} />
     </main>
   );
 }

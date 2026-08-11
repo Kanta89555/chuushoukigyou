@@ -16,7 +16,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     <html lang="ja">
       <body>
         <header className="header">
-          {username ? <MobileMapButton /> : null}
+          <MobileMapButton />
           <Link className="brand" href="/">
             <span className="brand-mark">SMEC</span>
             <span>中小企業診断士を学ぶ</span>
