@@ -284,6 +284,16 @@ aside h2 {
 .primary-button:disabled { cursor: wait; opacity: 0.65; }
 .term-explanation-body .primary-button { margin-top: 24px; }
 .term-message { margin: 14px 0 0; color: var(--accent-dark); font-size: 0.78rem; }
+.analysis-mode-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 20px; }
+.analysis-mode-actions button { min-height: 44px; padding: 8px 10px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; font-size: 0.78rem; font-weight: 700; }
+.analysis-mode-actions button.active { color: var(--accent-dark); background: var(--accent-soft); border-color: var(--accent); }
+.analysis-mode-actions button:disabled { cursor: wait; opacity: 0.7; }
+.ai-loading { margin: 18px 0; color: var(--muted); font-size: 0.84rem; }
+.company-analysis-result h3 { margin: 24px 0 8px; font-size: 0.84rem; }
+.company-analysis-result p { margin: 0; color: #35443b; font-size: 0.86rem; line-height: 1.75; }
+.company-analysis-result ul { margin: 0; padding-left: 1.25rem; color: #35443b; font-size: 0.84rem; line-height: 1.7; }
+.company-analysis-result li { margin: 6px 0; }
+.company-settings-link { min-height: 44px; margin-top: 12px; display: inline-flex; align-items: center; color: var(--accent-dark); font-weight: 700; text-underline-offset: 3px; }
 .vocabulary-detail { padding: 0 2px 14px; color: var(--muted); font-size: 0.72rem; line-height: 1.65; }
 .vocabulary-detail p { margin: 4px 0 10px; }
 
@@ -572,7 +582,7 @@ aside h2 {
   .article-panel h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
   .subject-grid { grid-template-columns: 1fr; }
   .subject-card { border-right: 0; }
-  .term-explanation { right: 12px; bottom: 12px; width: calc(100vw - 24px); max-height: 72vh; }
+  .term-explanation { inset: auto 0 0; width: 100%; max-height: 82vh; padding: 20px 18px max(20px, env(safe-area-inset-bottom)); border-radius: 14px 14px 0 0; }
   .vocabulary-panel { top: 64px; height: calc(100vh - 64px); }
   .next-unit-navigation { align-items: stretch; flex-direction: column; }
   .next-unit-navigation .primary-button { width: 100%; }
@@ -620,4 +630,26 @@ aside h2 {
   border: 1px solid var(--line);
   border-radius: 6px;
   font: inherit;
+}
+
+.settings-page { width: min(100%, 760px); min-height: calc(100vh - 72px); margin: 0 auto; padding: 52px 28px 96px; background: var(--surface); }
+.settings-page h1 { margin: 10px 0 18px; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(2rem, 7vw, 3rem); }
+.settings-lead { color: var(--muted); line-height: 1.8; }
+.privacy-notice { margin: 28px 0; padding: 16px 18px; background: #fff6df; border-left: 4px solid #c98a16; }
+.privacy-notice p { margin: 6px 0 0; color: #66542f; font-size: 0.84rem; line-height: 1.7; }
+.company-fields { display: grid; gap: 18px; }
+.company-field { padding: 18px; display: grid; gap: 10px; border: 1px solid var(--line); border-radius: 8px; }
+.company-field-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.company-field-heading label { font-size: 0.78rem; font-weight: 700; }
+.company-field-heading button { min-width: 44px; min-height: 44px; color: #a32626; background: transparent; border: 0; cursor: pointer; }
+.company-field input,
+.company-field textarea { width: 100%; padding: 11px 12px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+.company-field textarea { resize: vertical; line-height: 1.65; }
+.company-add-button { width: 100%; min-height: 48px; margin-top: 18px; color: var(--accent-dark); background: var(--accent-soft); border: 1px dashed var(--accent); border-radius: 6px; cursor: pointer; font-weight: 700; }
+.company-save-area { position: sticky; bottom: 0; margin-top: 28px; padding: 14px 0 max(14px, env(safe-area-inset-bottom)); background: rgb(255 254 251 / 94%); backdrop-filter: blur(8px); }
+.company-save-area .primary-button { width: 100%; min-height: 48px; }
+
+@media (max-width: 760px) {
+  .settings-page { min-height: calc(100vh - 64px); padding: 28px 18px 72px; }
+  .company-field { padding: 14px; }
 }

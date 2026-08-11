@@ -17,3 +17,33 @@ export const explainRequestSchema = z.object({
   subject: z.string().trim().min(1).max(100),
   surroundingContext: z.string().trim().min(1).max(1500),
 });
+
+export const companyAnalysisRequestSchema = z.object({
+  selectedContent: z.string().trim().min(1).max(500),
+  articleId: z.string().trim().min(1).max(100).regex(/^[a-z0-9-]+$/),
+  articleTitle: z.string().trim().min(1).max(200),
+  subject: z.string().trim().min(1).max(100),
+  surroundingContext: z.string().trim().min(1).max(1500),
+});
+
+export const companyAnalysisInputSchema = companyAnalysisRequestSchema.extend({
+  companyInformation: z.array(z.object({
+    label: z.string().min(1).max(50),
+    value: z.string().min(1).max(1000),
+  })).min(1).max(20),
+});
+
+export const companyAnalysisSchema = z.object({
+  assumptions: z.string().min(1).max(1500),
+  application: z.string().min(1).max(2500),
+  currentAnalysis: z.string().min(1).max(2500),
+  strengths: z.array(z.string().min(1).max(500)).max(8),
+  issues: z.array(z.string().min(1).max(500)).max(8),
+  recommendations: z.array(z.string().min(1).max(700)).max(8),
+  actions: z.array(z.string().min(1).max(700)).max(8),
+  risks: z.array(z.string().min(1).max(700)).max(8),
+  missingInformation: z.array(z.string().min(1).max(500)).max(8),
+  learningPoint: z.string().min(1).max(1500),
+});
+
+export type CompanyAnalysis = z.infer<typeof companyAnalysisSchema>;
