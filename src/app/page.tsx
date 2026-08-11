@@ -4,6 +4,7 @@ import { CurriculumSidebar } from "@/features/curriculum/components/CurriculumSi
 import { MobileCurriculum } from "@/features/curriculum/components/MobileCurriculum";
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
 import { findVocabularies } from "@/features/vocabulary/repository";
+import { findCompletedArticleIds } from "@/features/progress/repository";
 import {
   countUnits,
   curriculum,
@@ -14,15 +15,16 @@ import {
 export default async function Home() {
   const username = await requireCurrentUsername();
   const vocabularyItems = await findVocabularies(username);
+  const completedIds = await findCompletedArticleIds(username);
   const stats = getCurriculumStats();
   const subjects = curriculum.children ?? [];
 
   return (
     <main className="learning-layout">
-      <CurriculumSidebar />
+      <CurriculumSidebar completedIds={completedIds} />
 
       <article className="article-panel home-panel">
-        <MobileCurriculum />
+        <MobileCurriculum completedIds={completedIds} />
         <p className="eyebrow">Curriculum overview</p>
         <h1>知識の地図から、学びを始める。</h1>
         <p className="lead">

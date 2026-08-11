@@ -7,9 +7,12 @@ import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySi
 import { findVocabularies } from "@/features/vocabulary/repository";
 import { readArticle } from "@/features/articles/article";
 import { TermLearningWorkspace } from "@/features/terms/components/TermLearningWorkspace";
+import { NextUnitButton } from "@/features/progress/components/NextUnitButton";
+import { findCompletedArticleIds } from "@/features/progress/repository";
 import {
   countUnits,
   findNodeBySlugs,
+  getNextUnit,
   getNodeHref,
 } from "@/features/curriculum/curriculum";
 
@@ -20,6 +23,7 @@ type LearnPageProps = {
 export default async function LearnPage({ params }: LearnPageProps) {
   const username = await requireCurrentUsername();
   const vocabularyItems = await findVocabularies(username);
+  const completedIds = await findCompletedArticleIds(username);
   const { slug } = await params;
   const match = findNodeBySlugs(slug);
   if (!match) notFound();
@@ -29,13 +33,14 @@ export default async function LearnPage({ params }: LearnPageProps) {
   const children = node.children ?? [];
   const articleMarkdown = node.type === "unit" && node.article ? await readArticle(node.article) : null;
   const subject = ancestors.find((item) => item.type === "subject")?.title ?? "中小企業診断士";
+  const nextUnit = node.type === "unit" ? getNextUnit(node.id) : undefined;
 
   return (
     <main className="learning-layout">
-      <CurriculumSidebar activeIds={activeIds} />
+      <CurriculumSidebar activeIds={activeIds} completedIds={completedIds} />
 
       <article className="article-panel">
-        <MobileCurriculum activeIds={activeIds} />
+        <MobileCurriculum activeIds={activeIds} completedIds={completedIds} />
         <nav aria-label="パンくずリスト" className="breadcrumbs">
           <Link href="/">全体マップ</Link>
           {ancestors.slice(1).map((ancestor, index) => (
@@ -52,7 +57,7 @@ export default async function LearnPage({ params }: LearnPageProps) {
         <h1>{node.title}</h1>
 
         {node.type === "unit" ? (
-          articleMarkdown ? <TermLearningWorkspace articleId={node.id} articleTitle={node.title} markdown={articleMarkdown} subject={subject} /> : null
+          articleMarkdown ? <><TermLearningWorkspace articleId={node.id} articleTitle={node.title} markdown={articleMarkdown} subject={subject} />{nextUnit ? <NextUnitButton articleId={node.id} nextHref={nextUnit.href} nextTitle={nextUnit.node.title} /> : null}</> : null
         ) : (
           <>
             <p className="lead">この領域には{countUnits(node)}件の学習単元があります。</p>

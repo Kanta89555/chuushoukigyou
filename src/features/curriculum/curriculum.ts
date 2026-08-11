@@ -31,6 +31,20 @@ export function countUnits(node: CurriculumNode): number {
   return node.children?.reduce((total, child) => total + countUnits(child), 0) ?? 0;
 }
 
+export function getNextUnit(currentId: string): { node: CurriculumNode; href: string } | undefined {
+  const units: { node: CurriculumNode; ancestors: CurriculumNode[] }[] = [];
+
+  function collect(node: CurriculumNode, ancestors: CurriculumNode[]) {
+    if (node.type === "unit") units.push({ node, ancestors });
+    node.children?.forEach((child) => collect(child, [...ancestors, node]));
+  }
+
+  collect(curriculum, []);
+  const currentIndex = units.findIndex(({ node }) => node.id === currentId);
+  const next = units[currentIndex + 1];
+  return next ? { node: next.node, href: getNodeHref(next.ancestors, next.node) } : undefined;
+}
+
 export function getCurriculumStats() {
   const subjects = curriculum.children ?? [];
   const categories = subjects.flatMap((subject) => subject.children ?? []);

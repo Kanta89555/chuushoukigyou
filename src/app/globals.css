@@ -167,6 +167,22 @@ aside h2 {
 .tree-overview { color: #829087; font-size: 0.72rem; }
 .tree-link:hover, .tree-overview:hover { color: var(--accent); background: var(--accent-soft); }
 .tree-link.active, .tree-overview.active { color: var(--accent-dark); background: var(--accent-soft); font-weight: 700; }
+.tree-link.completed { opacity: 0.45; }
+.tree-link.completed.active { opacity: 0.65; }
+
+.next-unit-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.next-unit-navigation p { display: grid; gap: 4px; margin: 0; }
+.next-unit-navigation p span { color: var(--muted); font-size: 0.75rem; }
+.next-unit-navigation p strong { font-size: 0.95rem; }
+.next-unit-navigation .term-message { flex-basis: 100%; }
 
 .article-panel {
   min-width: 0;
@@ -482,6 +498,8 @@ aside h2 {
   .subject-card { border-right: 0; }
   .term-explanation { right: 12px; bottom: 12px; width: calc(100vw - 24px); max-height: 72vh; }
   .vocabulary-panel { top: 64px; height: calc(100vh - 64px); }
+  .next-unit-navigation { align-items: stretch; flex-direction: column; }
+  .next-unit-navigation .primary-button { width: 100%; }
 }
 
 .vocabulary-heading-actions { display: flex; align-items: center; gap: 8px; }

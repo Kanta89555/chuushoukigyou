@@ -6,12 +6,14 @@ type CurriculumTreeProps = {
   nodes: CurriculumNode[];
   ancestors?: CurriculumNode[];
   activeIds?: string[];
+  completedIds?: string[];
 };
 
 export function CurriculumTree({
   nodes,
   ancestors = [],
   activeIds = [],
+  completedIds = [],
 }: CurriculumTreeProps) {
   return (
     <ul className="curriculum-tree">
@@ -32,6 +34,7 @@ export function CurriculumTree({
                 </Link>
                 <CurriculumTree
                   activeIds={activeIds}
+                  completedIds={completedIds}
                   ancestors={[...ancestors, node]}
                   nodes={node.children}
                 />
@@ -42,7 +45,7 @@ export function CurriculumTree({
 
         return (
           <li key={node.id}>
-            <Link className={isActive ? "tree-link active" : "tree-link"} href={href}>
+            <Link className={`tree-link${isActive ? " active" : ""}${completedIds.includes(node.id) ? " completed" : ""}`} href={href}>
               {node.title}
             </Link>
           </li>
