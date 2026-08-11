@@ -104,7 +104,7 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
       const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error);
       window.dispatchEvent(new Event("vocabulary-updated"));
-      setMessage("単語帳へ保存しました。");
+      close();
     } catch (error) {
       setMessage(error instanceof Error && error.message ? error.message : "保存できませんでした。");
     } finally {
@@ -131,7 +131,7 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
       const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error);
       window.dispatchEvent(new Event("company-analysis-updated"));
-      setMessage("企業分析を保存しました。");
+      close();
     } catch (error) {
       setMessage(error instanceof Error && error.message ? error.message : "企業分析を保存できませんでした。");
     } finally {

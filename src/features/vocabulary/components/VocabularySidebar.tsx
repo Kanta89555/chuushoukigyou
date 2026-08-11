@@ -15,6 +15,7 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
   const [tab, setTab] = useState<"vocabulary" | "analysis">("vocabulary");
   const [query, setQuery] = useState("");
   const [openId, setOpenId] = useState<string | null>(null);
+  const [panelOpen, setPanelOpen] = useState(false);
 
   const removeVocabulary = useCallback(async (id: string) => {
     const response = await fetch("/api/vocabulary", {
@@ -67,6 +68,22 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
     };
   }, [refreshAnalyses, refreshVocabulary]);
 
+  useEffect(() => {
+    function syncPanelState() {
+      setPanelOpen(window.location.hash === "#vocabulary-panel");
+    }
+    syncPanelState();
+    window.addEventListener("hashchange", syncPanelState);
+    return () => window.removeEventListener("hashchange", syncPanelState);
+  }, []);
+
+  function closePanel() {
+    setPanelOpen(false);
+    if (window.location.hash === "#vocabulary-panel") {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+    }
+  }
+
   const normalizedQuery = query.toLocaleLowerCase();
   const filteredVocabulary = items.filter((item) => item.term.toLocaleLowerCase().includes(normalizedQuery));
   const filteredAnalyses = analysisItems.filter((item) =>
@@ -75,10 +92,12 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
   const activeCount = tab === "vocabulary" ? items.length : analysisItems.length;
 
   return (
-    <aside className="vocabulary-panel" id="vocabulary-panel" aria-labelledby="saved-items-title">
+    <>
+    <button aria-label="保存リストを閉じる" className={`saved-list-backdrop${panelOpen ? " open" : ""}`} onClick={closePanel} type="button" />
+    <aside className={`vocabulary-panel${panelOpen ? " open" : ""}`} id="vocabulary-panel" aria-labelledby="saved-items-title">
       <div className="vocabulary-heading">
         <div><p className="eyebrow">Saved learning</p><h2 id="saved-items-title">保存リスト</h2></div>
-        <div className="vocabulary-heading-actions"><span className="vocabulary-count" aria-label={`${activeCount}件`}>{activeCount}</span><a className="vocabulary-close" href="#" aria-label="保存リストを閉じる">×</a></div>
+        <div className="vocabulary-heading-actions"><span className="vocabulary-count" aria-label={`${activeCount}件`}>{activeCount}</span><button className="vocabulary-close" onClick={closePanel} type="button" aria-label="保存リストを閉じる">×</button></div>
       </div>
       <div className="saved-content-tabs" role="tablist" aria-label="保存内容">
         <button aria-selected={tab === "vocabulary"} className={tab === "vocabulary" ? "active" : ""} onClick={() => { setTab("vocabulary"); setOpenId(null); }} role="tab" type="button">単語帳</button>
@@ -92,6 +111,7 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
         filteredAnalyses.length ? <ul className="vocabulary-list">{filteredAnalyses.map((item) => <AnalysisListItem item={item} key={item.id} onDelete={removeAnalysis} onToggle={() => setOpenId(openId === item.id ? null : item.id)} open={openId === item.id} />)}</ul> : <EmptyState hasItems={analysisItems.length > 0} type="analysis" />
       )}
     </aside>
+    </>
   );
 }
 
