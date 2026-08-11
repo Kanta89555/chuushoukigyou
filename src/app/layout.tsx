@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCurrentUsername } from "@/features/auth/session";
 import { LogoutButton } from "@/features/auth/components/LogoutButton";
+import { MobileMapButton } from "@/features/curriculum/components/MobileMapButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     <html lang="ja">
       <body>
         <header className="header">
+          {username ? <MobileMapButton /> : null}
           <Link className="brand" href="/">
             <span className="brand-mark">SMEC</span>
             <span>中小企業診断士を学ぶ</span>

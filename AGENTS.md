@@ -265,6 +265,22 @@ AI生成には時間がかかりうるため、明確なLoading UIを表示す�
 
 コンテンツそのものを主役とし、過剰なカードUIやすべてを枠線で囲むことを避ける。記事領域は長文を読みやすい幅に制限する。Sidebarは情報量が多くても現在地が分かりやすいようにし、現在表示中の記事に対応するTree Nodeを強調表示する。Sidebarの展開状態をユーザー操作中に不必要にリセットしない。
 
+### Mobile-First Priority
+
+このアプリケーションの主要な利用環境はスマートフォンとする。新しい画面・機能・操作を設計するときは、最初にスマートフォンの狭い画面とタッチ操作で成立する構造を決め、その後にTablet / Desktopへ拡張する。Desktop表示を縮小しただけのMobile UIを作らない。
+
+- 主要操作は片手で届きやすい位置へ置き、頻繁に使う操作を画面上部の小さなアイコンだけへ依存させない。
+- タップ対象は原則として44×44px以上を確保し、隣接する操作との間隔を十分に取る。
+- Hoverを前提とせず、タップ・スワイプ・長押しなどの操作には視覚的な手掛かりと、同じ結果を得られる明示的なButtonを用意する。
+- 記事閲覧中に使う「次へ」「単語帳へ保存」などの主要Actionは、本文を隠さず、スクロール後にも見つけやすい位置と表現にする。
+- CurriculumとVocabularyは狭い本文領域へ常時並べず、Drawer / Sheet / Overlayで開閉する。開いた状態では閉じる操作、背景との区別、Scroll領域、Focus移動を明確にする。
+- DialogやAI解説はMobileではBottom Sheetを優先し、画面外へはみ出さず、ソフトウェアキーボード表示時にも主要操作へ到達できるようにする。
+- 表・数式・比較要素は本文全体を横スクロールさせず、該当要素だけを横スクロール可能にする。横スクロールできることが視覚的に分かるようにする。
+- `safe-area-inset-*` を考慮し、ノッチ・ホームインジケータ・ブラウザUIと固定要素が重ならないようにする。
+- 文字サイズ、行間、余白は長文をスマートフォンで読み続けられることを基準にし、情報量を減らす場合も現在地・見出し階層・主要Actionは維持する。
+- Mobile通信環境を前提に、初期表示へ不要なJavaScriptや全記事データを送らず、Loading / Error / Retryを操作対象の近くに表示する。
+- UI変更後は少なくとも幅360pxと390px相当で、横方向の意図しないOverflow、タップ領域、Drawer / Bottom Sheet、長い日本語タイトル、表、ソフトウェアキーボード表示を確認する。
+
 ### Desktop Layout
 
 ```text
@@ -275,7 +291,7 @@ Main:   Curriculum Sidebar | Article Content | Term List
 
 ### Responsive
 
-PC専用UIを作らない。スマートフォンでは左Curriculum SidebarをDrawer形式にし、`Header / Article / Bottom Sheet / Drawer Navigation` を基本とする。Sidebarをそのまま縮小せず、タップ領域を十分確保する。
+PC専用UIを作らない。スマートフォン版を基準実装とし、広い画面でのみSidebarや複数Columnを追加する。スマートフォンでは左Curriculum SidebarをDrawer形式にし、`Header / Article / Bottom Sheet / Drawer Navigation` を基本とする。Sidebarをそのまま縮小せず、タップ領域を十分確保する。Breakpointは特定端末名ではなく、コンテンツと操作が無理なく収まる幅を基準に決める。
 
 ### Accessibility
 
