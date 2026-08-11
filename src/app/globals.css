@@ -554,7 +554,6 @@ aside h2 {
     box-shadow: -16px 0 40px rgb(25 45 35 / 16%);
     transition: transform 180ms ease;
   }
-  .vocabulary-panel:target,
   .vocabulary-panel.open { transform: translateX(0); }
   .saved-list-backdrop {
     position: fixed;

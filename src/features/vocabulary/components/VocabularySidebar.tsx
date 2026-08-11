@@ -72,9 +72,16 @@ export function VocabularySidebar({ items: initialItems = [], analysisItems: ini
     function syncPanelState() {
       setPanelOpen(window.location.hash === "#vocabulary-panel");
     }
+    function escape(event: KeyboardEvent) {
+      if (event.key === "Escape") closePanel();
+    }
     syncPanelState();
     window.addEventListener("hashchange", syncPanelState);
-    return () => window.removeEventListener("hashchange", syncPanelState);
+    window.addEventListener("keydown", escape);
+    return () => {
+      window.removeEventListener("hashchange", syncPanelState);
+      window.removeEventListener("keydown", escape);
+    };
   }, []);
 
   function closePanel() {
