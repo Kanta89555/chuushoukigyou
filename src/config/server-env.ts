@@ -5,7 +5,7 @@ import { z } from "zod";
 const serverEnvSchema = z.object({
   DATABASE_URL: z.string().url(),
   GEMINI_API_KEY: z.string().min(1),
-  GEMINI_MODEL: z.string().min(1).default("gemini-2.5-flash"),
+  GEMINI_MODEL: z.string().min(1).default("gemini-3.6-flash"),
 });
 
 export function getServerEnv() {

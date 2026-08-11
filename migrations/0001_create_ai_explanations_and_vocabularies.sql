@@ -1,6 +1,6 @@
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
-CREATE TABLE ai_explanation_cache (
+CREATE TABLE IF NOT EXISTS ai_explanation_cache (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   term varchar(100) NOT NULL,
   article_id varchar(100) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE ai_explanation_cache (
   UNIQUE (term, article_id, context_hash, model, prompt_version)
 );
 
-CREATE TABLE vocabularies (
+CREATE TABLE IF NOT EXISTS vocabularies (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id uuid NOT NULL,
   term varchar(100) NOT NULL,
@@ -23,5 +23,5 @@ CREATE TABLE vocabularies (
   UNIQUE (user_id, article_id, term)
 );
 
-CREATE INDEX vocabularies_user_id_updated_at_idx
+CREATE INDEX IF NOT EXISTS vocabularies_user_id_updated_at_idx
   ON vocabularies (user_id, updated_at DESC);

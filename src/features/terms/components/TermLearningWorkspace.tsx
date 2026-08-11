@@ -13,8 +13,6 @@ type Props = {
 
 type Selection = { term: string; context: string };
 
-const OWNER_KEY = "smec-vocabulary-owner";
-
 export function TermLearningWorkspace({ articleId, articleTitle, subject, markdown }: Props) {
   const articleRef = useRef<HTMLDivElement>(null);
   const [selection, setSelection] = useState<Selection | null>(null);
@@ -65,14 +63,13 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
 
   async function save() {
     if (!selection || !explanation) return;
-    const ownerId = getOrCreateOwnerId();
     setStatus("saving");
     setMessage("");
     try {
       const response = await fetch("/api/vocabulary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ownerId, term: selection.term, articleId, explanation }),
+        body: JSON.stringify({ term: selection.term, articleId, explanation }),
       });
       const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error);
@@ -118,12 +115,4 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
       ) : null}
     </>
   );
-}
-
-function getOrCreateOwnerId() {
-  const current = localStorage.getItem(OWNER_KEY);
-  if (current) return current;
-  const created = crypto.randomUUID();
-  localStorage.setItem(OWNER_KEY, created);
-  return created;
 }

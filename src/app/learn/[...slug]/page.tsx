@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { requireCurrentUsername } from "@/features/auth/session";
 import { CurriculumSidebar } from "@/features/curriculum/components/CurriculumSidebar";
 import { MobileCurriculum } from "@/features/curriculum/components/MobileCurriculum";
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
@@ -16,6 +17,7 @@ type LearnPageProps = {
 };
 
 export default async function LearnPage({ params }: LearnPageProps) {
+  await requireCurrentUsername();
   const { slug } = await params;
   const match = findNodeBySlugs(slug);
   if (!match) notFound();

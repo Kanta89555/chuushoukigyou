@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { requireCurrentUsername } from "@/features/auth/session";
 import { CurriculumSidebar } from "@/features/curriculum/components/CurriculumSidebar";
 import { MobileCurriculum } from "@/features/curriculum/components/MobileCurriculum";
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
@@ -9,7 +10,8 @@ import {
   getNodeHref,
 } from "@/features/curriculum/curriculum";
 
-export default function Home() {
+export default async function Home() {
+  await requireCurrentUsername();
   const stats = getCurriculumStats();
   const subjects = curriculum.children ?? [];
 

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCurrentUsername } from "@/features/auth/session";
+import { LogoutButton } from "@/features/auth/components/LogoutButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +9,8 @@ export const metadata: Metadata = {
   description: "中小企業診断士試験の知識体系を俯瞰して学ぶアプリ",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const username = await getCurrentUsername();
   return (
     <html lang="ja">
       <body>
@@ -19,6 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <nav aria-label="主要メニュー" className="header-actions">
             <button disabled type="button">検索</button>
             <a href="#vocabulary-panel">単語帳</a>
+            {username ? <><span>{username}</span><LogoutButton /></> : null}
           </nav>
         </header>
         {children}

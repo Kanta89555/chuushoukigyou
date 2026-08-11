@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { NextResponse } from "next/server";
 import { getServerEnv } from "@/config/server-env";
+import { getCurrentUsername } from "@/features/auth/session";
 import { findCachedExplanation, saveCachedExplanation } from "@/features/terms/repository";
 import { generateTermExplanation } from "@/lib/ai/gemini";
 import { PROMPT_VERSION } from "@/lib/ai/prompts";
@@ -8,6 +9,9 @@ import { explainRequestSchema } from "@/lib/ai/schemas";
 
 export async function POST(request: Request) {
   try {
+    if (!(await getCurrentUsername())) {
+      return NextResponse.json({ error: "ログインが必要です。" }, { status: 401 });
+    }
     const input = explainRequestSchema.parse(await request.json());
     const env = getServerEnv();
     const contextHash = createHash("sha256").update(input.surroundingContext).digest("hex");

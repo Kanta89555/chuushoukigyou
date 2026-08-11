@@ -4,20 +4,13 @@ import { useCallback, useEffect, useState } from "react";
 import type { VocabularyItem } from "../types";
 
 type VocabularySidebarProps = { items?: VocabularyItem[] };
-const OWNER_KEY = "smec-vocabulary-owner";
-
 export function VocabularySidebar({ items: initialItems = [] }: VocabularySidebarProps) {
   const [items, setItems] = useState(initialItems);
   const [query, setQuery] = useState("");
   const [openId, setOpenId] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
-    let ownerId = localStorage.getItem(OWNER_KEY);
-    if (!ownerId) {
-      ownerId = crypto.randomUUID();
-      localStorage.setItem(OWNER_KEY, ownerId);
-    }
-    const response = await fetch(`/api/vocabulary?ownerId=${encodeURIComponent(ownerId)}`);
+    const response = await fetch("/api/vocabulary");
     if (!response.ok) return;
     const data = (await response.json()) as { items: VocabularyItem[] };
     setItems(data.items);

@@ -383,3 +383,13 @@ HTMLのsemantic structureを優先し、クリック可能要素を `div` だけ
 このプロジェクトでは「最もコード量の多い解決策」ではなく「現在の要件を満たしながら将来変更しやすい最も単純な解決策」を選ぶこと。既存architectureを尊重し、不明点は既存コード・curriculum・記事・schemaから意図を推測する（推測だけで大規模なarchitecture変更はしない）。
 
 ユーザー体験として最も重要なのは `全体像を理解する → 記事を読む → 分からない言葉に気付く → その場で理解する → 知識として保存する` という学習ループである。すべての実装判断は、この学習体験を複雑にしないことを基準に行う。
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -1,0 +1,5 @@
+import { z } from "zod";
+
+export const usernameSchema = z.string().trim().min(1, "ユーザー名を入力してください。").max(50);
+
+export const loginSchema = z.object({ username: usernameSchema });
