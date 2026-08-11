@@ -29,7 +29,7 @@ export function VocabularySidebar({ items: initialItems = [] }: VocabularySideba
 
   return (
     <aside className="vocabulary-panel" id="vocabulary-panel" aria-labelledby="vocabulary-title">
-      <div className="vocabulary-heading"><div><p className="eyebrow">My vocabulary</p><h2 id="vocabulary-title">単語帳</h2></div><span className="vocabulary-count" aria-label={`${items.length}件`}>{items.length}</span></div>
+      <div className="vocabulary-heading"><div><p className="eyebrow">My vocabulary</p><h2 id="vocabulary-title">単語帳</h2></div><div className="vocabulary-heading-actions"><span className="vocabulary-count" aria-label={`${items.length}件`}>{items.length}</span><a className="vocabulary-close" href="#" aria-label="単語帳を閉じる">×</a></div></div>
       <label className="vocabulary-search"><span className="visually-hidden">単語帳を検索</span><span aria-hidden="true">⌕</span><input onChange={(event) => setQuery(event.target.value)} placeholder="保存した用語を検索" type="search" value={query} /></label>
       {filtered.length ? (
         <ul className="vocabulary-list">{filtered.map((item) => (

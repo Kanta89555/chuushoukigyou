@@ -3,6 +3,7 @@ import { requireCurrentUsername } from "@/features/auth/session";
 import { CurriculumSidebar } from "@/features/curriculum/components/CurriculumSidebar";
 import { MobileCurriculum } from "@/features/curriculum/components/MobileCurriculum";
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
+import { findVocabularies } from "@/features/vocabulary/repository";
 import {
   countUnits,
   curriculum,
@@ -11,7 +12,8 @@ import {
 } from "@/features/curriculum/curriculum";
 
 export default async function Home() {
-  await requireCurrentUsername();
+  const username = await requireCurrentUsername();
+  const vocabularyItems = await findVocabularies(username);
   const stats = getCurriculumStats();
   const subjects = curriculum.children ?? [];
 
@@ -50,7 +52,7 @@ export default async function Home() {
         </section>
       </article>
 
-      <VocabularySidebar />
+      <VocabularySidebar items={vocabularyItems} />
     </main>
   );
 }

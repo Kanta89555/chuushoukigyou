@@ -4,6 +4,7 @@ import { requireCurrentUsername } from "@/features/auth/session";
 import { CurriculumSidebar } from "@/features/curriculum/components/CurriculumSidebar";
 import { MobileCurriculum } from "@/features/curriculum/components/MobileCurriculum";
 import { VocabularySidebar } from "@/features/vocabulary/components/VocabularySidebar";
+import { findVocabularies } from "@/features/vocabulary/repository";
 import { readArticle } from "@/features/articles/article";
 import { TermLearningWorkspace } from "@/features/terms/components/TermLearningWorkspace";
 import {
@@ -17,7 +18,8 @@ type LearnPageProps = {
 };
 
 export default async function LearnPage({ params }: LearnPageProps) {
-  await requireCurrentUsername();
+  const username = await requireCurrentUsername();
+  const vocabularyItems = await findVocabularies(username);
   const { slug } = await params;
   const match = findNodeBySlugs(slug);
   if (!match) notFound();
@@ -71,7 +73,7 @@ export default async function LearnPage({ params }: LearnPageProps) {
         )}
       </article>
 
-      <VocabularySidebar />
+      <VocabularySidebar items={vocabularyItems} />
     </main>
   );
 }

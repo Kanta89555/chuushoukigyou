@@ -448,7 +448,18 @@ aside h2 {
 
 @media (max-width: 1040px) {
   .learning-layout { grid-template-columns: minmax(230px, 270px) minmax(0, 1fr); }
-  .vocabulary-panel { display: none; }
+  .vocabulary-panel {
+    position: fixed;
+    z-index: 20;
+    top: 72px;
+    right: 0;
+    width: min(360px, 100vw);
+    transform: translateX(100%);
+    background: var(--surface);
+    box-shadow: -16px 0 40px rgb(25 45 35 / 16%);
+    transition: transform 180ms ease;
+  }
+  .vocabulary-panel:target { transform: translateX(0); }
 }
 
 @media (max-width: 760px) {
@@ -465,6 +476,14 @@ aside h2 {
   .subject-grid { grid-template-columns: 1fr; }
   .subject-card { border-right: 0; }
   .term-explanation { right: 12px; bottom: 12px; width: calc(100vw - 24px); max-height: 72vh; }
+  .vocabulary-panel { top: 64px; height: calc(100vh - 64px); }
+}
+
+.vocabulary-heading-actions { display: flex; align-items: center; gap: 8px; }
+.vocabulary-close { display: none; width: 36px; height: 36px; place-items: center; border-radius: 50%; font-size: 1.4rem; }
+
+@media (max-width: 1040px) {
+  .vocabulary-close { display: grid; }
 }
 
 @media (max-width: 440px) {
