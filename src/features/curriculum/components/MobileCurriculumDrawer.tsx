@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { type PointerEvent, type ReactNode, useEffect, useRef, useState } from "react";
 
 export function MobileCurriculumDrawer({ children }: { children: ReactNode }) {
@@ -79,6 +80,7 @@ export function MobileCurriculumDrawer({ children }: { children: ReactNode }) {
         <nav aria-label="モバイル学習マップ" onClick={(event) => {
           if ((event.target as HTMLElement).closest("a")) close();
         }}>
+          <Link className="open-visual-map-link" href="/map">拡大できる全体マップを開く</Link>
           {children}
         </nav>
       </aside>

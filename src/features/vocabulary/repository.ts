@@ -35,6 +35,18 @@ export async function findVocabularies(username: string): Promise<VocabularyItem
   return rows.map(mapVocabulary);
 }
 
+export async function findVocabulariesByArticle(username: string, articleId: string): Promise<VocabularyItem[]> {
+  const sql = getDb();
+  const rows = await sql`
+    SELECT id, term, explanation, article_id, created_at
+    FROM vocabularies
+    WHERE username = ${username} AND article_id = ${articleId}
+    ORDER BY updated_at DESC
+    LIMIT 100
+  `;
+  return rows.map(mapVocabulary);
+}
+
 export async function deleteVocabulary(id: string, username: string): Promise<boolean> {
   const sql = getDb();
   const rows = await sql`

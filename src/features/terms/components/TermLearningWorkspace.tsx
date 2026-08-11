@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { CompanyAnalysis, TermExplanation } from "@/lib/ai/schemas";
@@ -19,6 +19,10 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
   const [status, setStatus] = useState<"idle" | "loading" | "saving">("idle");
   const [message, setMessage] = useState("");
   const [needsCompanyProfile, setNeedsCompanyProfile] = useState(false);
+
+  useEffect(() => {
+    window.localStorage.setItem("current-article-id", articleId);
+  }, [articleId]);
 
   function captureSelection() {
     const nativeSelection = window.getSelection();

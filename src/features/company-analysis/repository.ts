@@ -82,6 +82,18 @@ export async function findSavedCompanyAnalyses(username: string): Promise<SavedC
   return rows.map(mapSavedCompanyAnalysis);
 }
 
+export async function findSavedCompanyAnalysesByArticle(username: string, articleId: string): Promise<SavedCompanyAnalysis[]> {
+  const sql = getDb();
+  const rows = await sql`
+    SELECT id, selected_content, article_id, article_title, subject, analysis, created_at
+    FROM saved_company_analyses
+    WHERE username = ${username} AND article_id = ${articleId}
+    ORDER BY updated_at DESC
+    LIMIT 100
+  `;
+  return rows.map(mapSavedCompanyAnalysis);
+}
+
 export async function deleteSavedCompanyAnalysis(id: string, username: string): Promise<boolean> {
   const sql = getDb();
   const rows = await sql`

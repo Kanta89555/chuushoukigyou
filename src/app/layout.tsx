@@ -23,6 +23,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           </Link>
           <nav aria-label="主要メニュー" className="header-actions">
             <button disabled type="button">検索</button>
+            {username ? <Link className="desktop-map-link" href="/map">学習マップ</Link> : null}
             <a href="#vocabulary-panel">保存リスト</a>
             {username ? <Link href="/settings/company">設定</Link> : null}
             {username ? <><span>{username}</span><LogoutButton /></> : null}
