@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import type { TermExplanation } from "@/lib/ai/schemas";
 
 type Props = {
@@ -85,7 +86,15 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
   return (
     <>
       <div className="markdown-article" onPointerUp={captureSelection} ref={articleRef}>
-        <ReactMarkdown skipHtml>{markdown}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            table: ({ children }) => <div className="markdown-table-wrapper"><table>{children}</table></div>,
+          }}
+          remarkPlugins={[remarkGfm]}
+          skipHtml
+        >
+          {markdown}
+        </ReactMarkdown>
       </div>
 
       {selection ? (
