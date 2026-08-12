@@ -33,7 +33,7 @@ export function LoginForm() {
   return (
     <form className="login-form" onSubmit={login}>
       <label htmlFor="password">合言葉</label>
-      <input autoComplete="current-password" autoFocus id="password" maxLength={200} onChange={(event) => setPassword(event.target.value)} required type="password" value={password} />
+      <input autoCapitalize="none" autoComplete="off" autoCorrect="off" autoFocus id="password" inputMode="text" maxLength={200} onChange={(event) => setPassword(event.target.value)} required spellCheck={false} type="text" value={password} />
       <button className="primary-button" disabled={loading} type="submit">{loading ? "ログイン中…" : "ログイン"}</button>
       {error ? <p className="term-message" role="alert">{error}</p> : null}
     </form>
