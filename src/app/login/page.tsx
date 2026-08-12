@@ -9,7 +9,7 @@ export default async function LoginPage() {
       <section className="login-panel">
         <p className="eyebrow">SMEC learning</p>
         <h1>ログイン</h1>
-        <p>登録済みのユーザー名を入力してください。</p>
+        <p>合言葉を入力すると、どのブラウザからでも同じ学習データを利用できます。</p>
         <LoginForm />
       </section>
     </main>
