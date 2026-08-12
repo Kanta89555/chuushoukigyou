@@ -9,6 +9,7 @@ import { userExists } from "./repository";
 
 const SESSION_COOKIE = "smec-session";
 const SESSION_MAX_AGE = 60 * 60 * 24 * 30;
+export const SINGLE_USER_USERNAME = "あ";
 
 type SessionPayload = { username: string; expiresAt: number };
 
@@ -47,7 +48,6 @@ export const getCurrentUsername = cache(async (): Promise<string | null> => {
   const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token) return null;
   const session = verifyToken(token);
-  const { SINGLE_USER_USERNAME } = getAuthEnv();
   if (!session || session.username !== SINGLE_USER_USERNAME || !(await userExists(session.username))) return null;
   return session.username;
 });

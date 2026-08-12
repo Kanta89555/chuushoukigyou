@@ -9,8 +9,6 @@ const serverEnvSchema = z.object({
 });
 
 const authEnvSchema = z.object({
-  SINGLE_USER_USERNAME: z.string().trim().min(1).max(50),
-  SINGLE_USER_PASSWORD: z.string().min(1),
   SESSION_SECRET: z.string().min(32),
 });
 
@@ -25,8 +23,6 @@ export function getServerEnv() {
 export function getAuthEnv() {
   const development = process.env.NODE_ENV !== "production";
   return authEnvSchema.parse({
-    SINGLE_USER_USERNAME: process.env.SINGLE_USER_USERNAME ?? (development ? "あ" : undefined),
-    SINGLE_USER_PASSWORD: process.env.SINGLE_USER_PASSWORD ?? (development ? "あ" : undefined),
     SESSION_SECRET: process.env.SESSION_SECRET ?? (development ? "development-only-session-secret-change-me" : undefined),
   });
 }
