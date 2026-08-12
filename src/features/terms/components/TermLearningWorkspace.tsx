@@ -1,10 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { CompanyAnalysis, TermExplanation } from "@/lib/ai/schemas";
+import { createQuiz, getTermsForArticle } from "@/features/term-quiz/dictionary";
+import { remarkTermLinks } from "@/features/term-quiz/remark-term-links";
+import { TermQuizDialog } from "@/features/term-quiz/components/TermQuizDialog";
+import type { TermQuiz } from "@/features/term-quiz/types";
 
 type Props = { articleId: string; articleTitle: string; subject: string; markdown: string };
 type Selection = { content: string; context: string };
@@ -19,6 +23,8 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
   const [status, setStatus] = useState<"idle" | "loading" | "saving">("idle");
   const [message, setMessage] = useState("");
   const [needsCompanyProfile, setNeedsCompanyProfile] = useState(false);
+  const [quiz, setQuiz] = useState<TermQuiz | null>(null);
+  const articleTerms = useMemo(() => getTermsForArticle(articleId), [articleId]);
 
   useEffect(() => {
     window.localStorage.setItem("current-article-id", articleId);
@@ -39,6 +45,16 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
     setAnalysis(null);
     setMessage("");
     setNeedsCompanyProfile(false);
+  }
+
+  function openQuiz(event: React.MouseEvent<HTMLDivElement>) {
+    const target = (event.target as HTMLElement).closest<HTMLButtonElement>(".term-quiz-trigger");
+    const termId = target?.dataset.termId;
+    if (!termId) return;
+    event.preventDefault();
+    window.getSelection()?.removeAllRanges();
+    setSelection(null);
+    setQuiz(createQuiz(termId) ?? null);
   }
 
   async function explain() {
@@ -148,9 +164,11 @@ export function TermLearningWorkspace({ articleId, articleTitle, subject, markdo
 
   return (
     <>
-      <div className="markdown-article" onPointerUp={captureSelection} ref={articleRef}>
-        <ReactMarkdown components={{ table: ({ children }) => <div className="markdown-table-wrapper"><table>{children}</table></div> }} remarkPlugins={[remarkGfm]} skipHtml>{markdown}</ReactMarkdown>
+      <div className="markdown-article" onClick={openQuiz} onPointerUp={captureSelection} ref={articleRef}>
+        <ReactMarkdown components={{ table: ({ children }) => <div className="markdown-table-wrapper"><table>{children}</table></div> }} remarkPlugins={[remarkGfm, [remarkTermLinks, { terms: articleTerms }]]} skipHtml>{markdown}</ReactMarkdown>
       </div>
+
+      {quiz ? <TermQuizDialog key={quiz.termId} onClose={() => setQuiz(null)} quiz={quiz} /> : null}
 
       {selection ? (
         <section className="term-explanation" aria-live="polite" aria-label={`${selection.content}のAI機能`}>

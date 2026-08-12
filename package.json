@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "terms:generate": "node scripts/generate-term-dictionary.mjs",
     "db:migrate": "node --env-file=.env.local scripts/migrate.mjs",
     "start": "next start",
     "lint": "eslint .",
@@ -18,6 +19,7 @@
     "react-dom": "19.2.8",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
+    "unist-util-visit": "^5.1.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
